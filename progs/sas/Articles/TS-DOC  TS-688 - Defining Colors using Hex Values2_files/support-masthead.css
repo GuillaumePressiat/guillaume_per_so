@@ -1,0 +1,200 @@
+/* ****** MASTHEAD *******
+----------------------------------------------- */
+
+#masthead {
+	padding: 0px;
+	background-color: #ffffff;
+	height: 95px;
+	position: relative;
+}
+/* ****** SAS LOGO *******
+----------------------------------------------- */
+
+#sas_logo {
+	left:0;
+	margin-left:15px;
+	padding:20px 0 0;
+	top:0;
+	float: left;
+	width:300px;
+}
+#sas_logo p {
+	color:#959899;
+	font-size:12px;
+	padding-top:5px;
+	text-align:left;
+}
+/* ****** SEARCH *******
+----------------------------------------------- */
+
+#searchBox {
+	float: right;
+	padding: 0;
+	margin: 0px 5px 0px 0px;
+	height: 70px;
+}
+#searchBox fieldset {
+	border: 1px solid #ccc;
+	padding: 0px 5px 2px 10px;
+	margin: 0px 0px 0px 0px;
+}
+#searchBox fieldset.search {
+	border: 0px solid #ffffff;
+	text-align: right;
+	margin-top: 45px;
+}
+#searchBox label {
+	font-size: .8em;
+	color: #fff;
+	background-color: inherit;
+}
+#searchBox input.searchField {
+	font-size: .8em;
+	background: url(/images/bg_searchbox.gif) top left repeat-x;
+	border: 1px solid #A5ACB2;
+	height: 16px;
+	padding: 1px;
+	float: right;
+	margin-right: 5px;
+}
+#searchBox input.searchButton {
+	background:transparent url(/images/navbar.png) no-repeat scroll right -425px;
+	border:medium none;
+	color:white;
+	cursor:pointer;
+	font-family:Verdana, Arial, sans-serif;
+	font-size:10px;
+	font-size-adjust:none;
+	font-stretch:normal;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:bold;
+	height:18px;
+	line-height:normal;
+	margin:0 0 0 5px;
+	padding:0 5px 0 0;
+	text-shadow:1px -1px 1px #C25208;
+}
+#searchBox span {
+	background:transparent url(/images/navbar.png) no-repeat scroll left -425px;
+	cursor:pointer;
+	display:inline-block;
+	float:right;
+	height:18px;
+	margin-left: 5px;
+}
+#searchBox .searchSelect {
+	font-size: .8em;
+	border: 1px solid #A5ACB2;
+	padding: 1px;
+	float: right;
+}
+#searchBox .searchSelect optgroup {
+	border-color: black;
+	border-width: 1px 0 0 0;
+	border-style: solid;
+	padding: 5px 0 0 0;
+}
+ul#login_area {
+	background:transparent url(/images/navbar.png) no-repeat scroll left -468px;
+	display:inline;
+	height:20px;
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+	margin:0;
+	padding:0 0 0 0;
+	position:absolute;
+	right:0;
+	top:0;
+	white-space:nowrap;
+	z-index:60000;
+	text-align: center;
+}
+ul#login_area li {
+	border-left:1px solid #6699CC;
+	color:white;
+	display:block;
+	float:left;
+	line-height:18px;
+	white-space:nowrap;
+	font-size: 11px;
+	font-weight: bold;
+}
+ul#login_area li a {
+	color:white;
+	display:inline-block;
+	font-size:11px;
+	font-weight:bold;
+	line-height:18px;
+	padding:0 15px;
+	text-decoration:none;
+}
+ul#login_area li.first {
+	border-left:medium none;
+}
+/* ****** MASTHEAD NAVIGATION *******
+----------------------------------------------- */
+
+#mastheadnav {
+	width: 100%;
+	background:transparent url(/images/navbar.png) no-repeat scroll -50px 0;
+	height:39px;
+	padding:0;
+	position:relative;
+	z-index:400;
+}
+#mastheadnav .homeselected {
+	font-weight: bold;
+	background: none;
+}
+#mastheadnav ul {
+	font-family:Arial, sans-serif;
+	font-size:12px;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	list-style-image: none;
+}
+#mastheadnav li {
+	border-top:0 none;
+	float:left;
+	font-size:12px;
+	height:35px;
+	margin:0;
+	padding:0;
+	position:relative;
+}
+#mastheadnav li p {
+	border-bottom:0 none;
+	border-left:1px solid #6699CC;
+	border-right:1px solid #0F6BA7;
+	font-size:12px;
+	margin:0;
+	padding:0;
+}
+#mastheadnav li a {
+	color:white;
+	display:block;
+	font-size:12px;
+	font-weight:bold;
+	line-height:35px;
+	margin:0;
+	padding:0 10px;
+	text-decoration:none;
+	white-space:nowrap;
+}
+#mastheadnav li a:visited {
+	color: #fff;
+	background-color: inherit;
+}
+#mastheadnav li a:hover {
+	color: #fff;
+	background:transparent url(/images/navbar.png) no-repeat scroll -400px -100px;
+}
+#mastheadnav .current {
+	background:transparent url(/images/navbar.png) no-repeat scroll -100px -50px;
+}
+#mastheadnav .current a:hover {
+	background:transparent url(/images/navbar.png) no-repeat scroll -100px -50px;
+}

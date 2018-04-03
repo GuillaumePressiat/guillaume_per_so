@@ -1,0 +1,51 @@
+@import "email/email2friend.css";
+
+#social
+{
+	position: relative;
+	display: block;
+	z-index: 500;
+	text-align: left;
+	float: none;
+}
+.share
+{
+	background: url(/includes/share/images/share_icon.png) no-repeat left center;
+	padding-left: 20px;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: left;
+	display: block;
+	line-height: 16px;
+}
+
+a.share:hover { cursor: pointer; }
+
+#social ul
+{
+	margin: 2px 0 2px 2px;
+	width: 180px;
+	list-style: none;
+	background: url(/includes/share/images/social_bg.png) 50% top;
+	_background-image: url(/includes/share/images/social_bg.gif);
+	padding: 0;
+	z-index: 500;
+	position: absolute;
+}
+#social li {margin:2px; list-style: none;width:98%;}
+#social img {padding:0 3px;}
+#social li a
+{
+	color: white;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 85%;
+	font-weight: normal;
+	text-decoration: none;
+	line-height: 25px;
+	display: block;
+	background-position: 10px 50%;
+	background-repeat: no-repeat;
+	padding-left: 30px;
+	}
+	
+#social li a:hover { text-decoration: underline; }

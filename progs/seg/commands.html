@@ -1,0 +1,1430 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>body {
+  width: 60em;
+  border: 10px solid #6495ED;
+  outline: 1300px solid #444;
+  margin: 16px auto;
+  zoom: 135%;
+}
+
+body .markdown-body
+{
+  padding: 30px;
+}
+
+@font-face {
+  font-family: fontawesome-mini;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #333333;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body b,
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body sub,
+.markdown-body sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.markdown-body sup {
+  top: -0.5em;
+}
+.markdown-body sub {
+  bottom: -0.25em;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body .codehilitetable {
+  border: 0;
+  border-spacing: 0;
+}
+
+.markdown-body .codehilitetable tr {
+  border: 0;
+}
+
+.markdown-body .codehilitetable pre,
+.markdown-body .codehilitetable div.codehilite {
+  margin: 0;
+}
+
+.markdown-body .linenos,
+.markdown-body .code,
+.markdown-body .codehilitetable td {
+  border: 0;
+  padding: 0;
+}
+
+.markdown-body td:not(.linenos) .linenodiv {
+  padding: 0 !important;
+}
+
+.markdown-body .code {
+  width: 100%;
+}
+
+.markdown-body .linenos div pre,
+.markdown-body .linenodiv pre,
+.markdown-body .linenodiv {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.markdown-body .code div pre,
+.markdown-body .code div {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.markdown-body * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font: 13px Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.4;
+}
+
+.markdown-body a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:focus,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before,
+.markdown-body hr:after {
+  display: table;
+  content: " ";
+}
+
+.markdown-body hr:after {
+  clear: both;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #e7e7e7;
+  background-image: -moz-linear-gradient(#fefefe, #e7e7e7);
+  background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+  background-image: linear-gradient(#fefefe, #e7e7e7);
+  background-repeat: repeat-x;
+  border-radius: 2px;
+  border: 1px solid #cfcfcf;
+  color: #000;
+  padding: 3px 5px;
+  line-height: 10px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  display: inline-block;
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body .headeranchor-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  padding-right: 6px;
+  padding-left: 30px;
+  margin-left: -30px;
+}
+
+.markdown-body .headeranchor-link:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .headeranchor,
+.markdown-body h2 .headeranchor,
+.markdown-body h3 .headeranchor,
+.markdown-body h4 .headeranchor,
+.markdown-body h5 .headeranchor,
+.markdown-body h6 .headeranchor {
+  display: none;
+  color: #000;
+  vertical-align: middle;
+}
+
+.markdown-body h1:hover .headeranchor-link,
+.markdown-body h2:hover .headeranchor-link,
+.markdown-body h3:hover .headeranchor-link,
+.markdown-body h4:hover .headeranchor-link,
+.markdown-body h5:hover .headeranchor-link,
+.markdown-body h6:hover .headeranchor-link {
+  height: 1em;
+  padding-left: 8px;
+  margin-left: -30px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .headeranchor-link .headeranchor,
+.markdown-body h2:hover .headeranchor-link .headeranchor,
+.markdown-body h3:hover .headeranchor-link .headeranchor,
+.markdown-body h4:hover .headeranchor-link .headeranchor,
+.markdown-body h5:hover .headeranchor-link .headeranchor,
+.markdown-body h6:hover .headeranchor-link .headeranchor {
+  display: inline-block;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre,
+.markdown-body .admonition {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body code,
+.markdown-body samp {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .codehilite {
+  margin-bottom: 16px;
+}
+
+.markdown-body .codehilite pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .codehilite pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+/* Admonition */
+.markdown-body .admonition {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  position: relative;
+  border-radius: 3px;
+  border: 1px solid #e0e0e0;
+  border-left: 6px solid #333;
+  padding: 10px 10px 10px 30px;
+}
+
+.markdown-body .admonition table {
+  color: #333;
+}
+
+.markdown-body .admonition p {
+  padding: 0;
+}
+
+.markdown-body .admonition-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.markdown-body .admonition>.admonition-title {
+  color: #333;
+}
+
+.markdown-body .attention>.admonition-title {
+  color: #a6d796;
+}
+
+.markdown-body .caution>.admonition-title {
+  color: #d7a796;
+}
+
+.markdown-body .hint>.admonition-title {
+  color: #96c6d7;
+}
+
+.markdown-body .danger>.admonition-title {
+  color: #c25f77;
+}
+
+.markdown-body .question>.admonition-title {
+  color: #96a6d7;
+}
+
+.markdown-body .note>.admonition-title {
+  color: #d7c896;
+}
+
+.markdown-body .admonition:before,
+.markdown-body .attention:before,
+.markdown-body .caution:before,
+.markdown-body .hint:before,
+.markdown-body .danger:before,
+.markdown-body .question:before,
+.markdown-body .note:before {
+  font: normal normal 16px fontawesome-mini;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5;
+  color: #333;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.markdown-body .admonition:before {
+  content: "\f056\00a0";
+  color: 333;
+}
+
+.markdown-body .attention:before {
+  content: "\f058\00a0";
+  color: #a6d796;
+}
+
+.markdown-body .caution:before {
+  content: "\f06a\00a0";
+  color: #d7a796;
+}
+
+.markdown-body .hint:before {
+  content: "\f05a\00a0";
+  color: #96c6d7;
+}
+
+.markdown-body .danger:before {
+  content: "\f057\00a0";
+  color: #c25f77;
+}
+
+.markdown-body .question:before {
+  content: "\f059\00a0";
+  color: #96a6d7;
+}
+
+.markdown-body .note:before {
+  content: "\f040\00a0";
+  color: #d7c896;
+}
+
+.markdown-body .admonition::after {
+  content: normal;
+}
+
+.markdown-body .attention {
+  border-left: 6px solid #a6d796;
+}
+
+.markdown-body .caution {
+  border-left: 6px solid #d7a796;
+}
+
+.markdown-body .hint {
+  border-left: 6px solid #96c6d7;
+}
+
+.markdown-body .danger {
+  border-left: 6px solid #c25f77;
+}
+
+.markdown-body .question {
+  border-left: 6px solid #96a6d7;
+}
+
+.markdown-body .note {
+  border-left: 6px solid #d7c896;
+}
+
+.markdown-body .admonition>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body .admonition>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* progress bar*/
+.markdown-body .progress {
+  display: block;
+  width: 300px;
+  margin: 10px 0;
+  height: 24px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #ededed;
+  position: relative;
+  box-shadow: inset -1px 1px 3px rgba(0, 0, 0, .1);
+}
+
+.markdown-body .progress-label {
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  width: 100%; margin: 0;
+  line-height: 24px;
+  color: #333;
+  text-shadow: 1px 1px 0 #fefefe, -1px -1px 0 #fefefe, -1px 1px 0 #fefefe, 1px -1px 0 #fefefe, 0 1px 0 #fefefe, 0 -1px 0 #fefefe, 1px 0 0 #fefefe, -1px 0 0 #fefefe, 1px 1px 2px #000;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.markdown-body .progress-bar {
+  height: 24px;
+  float: left;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #96c6d7;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 -1px 0 rgba(0, 0, 0, .1);
+  background-size: 30px 30px;
+  background-image: -webkit-linear-gradient(
+    135deg, rgba(255, 255, 255, .4) 27%,
+    transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%,
+    transparent 77%, transparent
+  );
+  background-image: -moz-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -ms-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -o-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+}
+
+.markdown-body .progress-100plus .progress-bar {
+  background-color: #a6d796;
+}
+
+.markdown-body .progress-80plus .progress-bar {
+  background-color: #c6d796;
+}
+
+.markdown-body .progress-60plus .progress-bar {
+  background-color: #d7c896;
+}
+
+.markdown-body .progress-40plus .progress-bar {
+  background-color: #d7a796;
+}
+
+.markdown-body .progress-20plus .progress-bar {
+  background-color: #d796a6;
+}
+
+.markdown-body .progress-0plus .progress-bar {
+  background-color: #c25f77;
+}
+
+.markdown-body .candystripe-animate .progress-bar{
+  -webkit-animation: animate-stripes 3s linear infinite;
+  -moz-animation: animate-stripes 3s linear infinite;
+  animation: animate-stripes 3s linear infinite;
+}
+
+@-webkit-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@-moz-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+.markdown-body .gloss .progress-bar {
+  box-shadow:
+    inset 0 4px 12px rgba(255, 255, 255, .7),
+    inset 0 -12px 0 rgba(0, 0, 0, .05);
+}
+
+/* Multimarkdown Critic Blocks */
+.markdown-body .critic_mark {
+  background: #ff0;
+}
+
+.markdown-body .critic_delete {
+  color: #c82829;
+  text-decoration: line-through;
+}
+
+.markdown-body .critic_insert {
+  color: #718c00 ;
+  text-decoration: underline;
+}
+
+.markdown-body .critic_comment {
+  color: #8e908c;
+  font-style: italic;
+}
+
+.markdown-body .headeranchor {
+  font: normal normal 16px octicons-anchor;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.headeranchor:before {
+  content: '\f05c';
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 4px 0.25em -20px;
+  vertical-align: middle;
+}
+
+/* Media */
+@media only screen and (min-width: 480px) {
+  .markdown-body {
+    font-size:14px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .markdown-body {
+    font-size:16px;
+  }
+}
+
+@media print {
+  .markdown-body * {
+    background: transparent !important;
+    color: black !important;
+    filter:none !important;
+    -ms-filter: none !important;
+  }
+
+  .markdown-body {
+    font-size:12pt;
+    max-width:100%;
+    outline:none;
+    border: 0;
+  }
+
+  .markdown-body a,
+  .markdown-body a:visited {
+    text-decoration: underline;
+  }
+
+  .markdown-body .headeranchor-link {
+    display: none;
+  }
+
+  .markdown-body a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  .markdown-body abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .markdown-body .ir a:after,
+  .markdown-body a[href^="javascript:"]:after,
+  .markdown-body a[href^="#"]:after {
+    content: "";
+  }
+
+  .markdown-body pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  .markdown-body pre,
+  .markdown-body blockquote {
+    border: 1px solid #999;
+    padding-right: 1em;
+    page-break-inside: avoid;
+  }
+
+  .markdown-body .progress,
+  .markdown-body .progress-bar {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .markdown-body .progress {
+    border: 1px solid #ddd;
+  }
+
+  .markdown-body .progress-bar {
+    height: 22px;
+    border-right: 1px solid #ddd;
+  }
+
+  .markdown-body tr,
+  .markdown-body img {
+    page-break-inside: avoid;
+  }
+
+  .markdown-body img {
+    max-width: 100% !important;
+  }
+
+  .markdown-body p,
+  .markdown-body h2,
+  .markdown-body h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .markdown-body h2,
+  .markdown-body h3 {
+    page-break-after: avoid;
+  }
+}
+</style><title>commands</title></head><body><article class="markdown-body"><h1 id="pratiques-sur-sas-enterprise-guide-seg"><a name="user-content-pratiques-sur-sas-enterprise-guide-seg" href="#pratiques-sur-sas-enterprise-guide-seg" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Pratiques sur SAS Enterprise Guide (SEG)</h1>
+<h3 id="sommaire"><a name="user-content-sommaire" href="#sommaire" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Sommaire</h3>
+<!-- MarkdownTOC -->
+
+<ul>
+<li><a href="#echanger-avec-la-plateforme">Échanger avec la plateforme</a></li>
+<li><a href="#quelques-tables-vues-une-par-une">Quelques tables vues une par une</a><ul>
+<li><a href="#table-mco-fixe">Table mco fixe</a></li>
+<li><a href="#table-mco-diag">Table mco diag</a></li>
+<li><a href="#table-um">Table um</a></li>
+<li><a href="#les-tables-en-ssr">Les tables en SSR</a></li>
+</ul>
+</li>
+<li><a href="#les-colonnes-ident---ifiantes">Les colonnes &ldquo;ident&rdquo; - ifiantes</a><ul>
+<li><a href="#en-mco">En MCO</a></li>
+<li><a href="#en-ssr-psy-et-had">En SSR, PSY et HAD</a></li>
+<li><a href="#des-nomenclatures">Des nomenclatures</a></li>
+</ul>
+</li>
+<li><a href="#import--export">Import / Export</a><ul>
+<li><a href="#exporter-un-fichier-en-txt">Exporter un fichier en .txt</a></li>
+<li><a href="#exporter-une-table-sas">Exporter une table sas</a></li>
+<li><a href="#exporter-un-resultat-table-en-excel">Exporter un résultat table en Excel</a></li>
+<li><a href="#importer-un-referentiel">Importer un référentiel</a></li>
+</ul>
+</li>
+<li><a href="#programmation">Programmation</a><ul>
+<li><a href="#seg-et-le-generateur-de-requetes">SEG et le Générateur de requêtes</a></li>
+<li><a href="#faire-du-sas-avec-seg">Faire du SAS avec SEG</a></li>
+<li><a href="#sauvegarder-son-programme-avec-notepad">Sauvegarder son programme avec Notepad++</a></li>
+</ul>
+</li>
+<li><a href="#en-cas-de-difficultes">En cas de difficultés</a></li>
+</ul>
+<!-- /MarkdownTOC -->
+
+<p><br><br><br></p>
+<h3 id="echanger-avec-la-plateforme"><a name="user-content-echanger-avec-la-plateforme" href="#echanger-avec-la-plateforme" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Échanger avec la plateforme</h3>
+<p>Le Presse-Papiers de votre PC est indépendant du Presse-Papiers du Bureau Distant : le copier-coller de l&rsquo;un vers l&rsquo;autre ne fonctionne pas.*</p>
+<blockquote>
+<p>*Nous verrons comment pallier à cette difficulté avec Notepad++.</p>
+</blockquote>
+<p>Par ailleurs, au cours des travaux, il sera nécessaire d&rsquo;exporter des résultats, d&rsquo;importer des référentiels dans le logiciel.<br />
+Avant de voir comment faire cela, il faut comprendre comment les échanges de fichiers sont rendus possibles avec la plateforme.</p>
+<pre><code class="sas">    - Une fois connecté à la plateforme (en ayant coché la case Lecteurs)
+    - ouvrir l'explorateur de fichiers
+    - Comprendre la structuration des disques et lecteurs réseaux
+    - Il s'agit d'un remote Desktop, les réseaux habituellement connectés à votre ordinateur sont présentés ainsi : 
+        - G on SAP5111857 (ordi au Siège)
+        - K on SAP5111857 (ordi au Siège)
+        - C on ABC1234567 (ordi à Antoine Béclère)
+    - Les échanges de fichiers sont possibles par glisser-déposer entre la plateforme et ces &quot;lecteurs&quot;
+
+    - Un conseil : se créer un répertoire style SEGEXPORT à la racine du C:\SEGEXPORT pour avoir un accès rapide 
+    (Le C de votre ordinateur, pas le C de l'ordi du bureau distant)
+</code></pre>
+
+<h3 id="quelques-tables-vues-une-par-une"><a name="user-content-quelques-tables-vues-une-par-une" href="#quelques-tables-vues-une-par-une" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Quelques tables vues une par une</h3>
+<p><em><br />
+Comment appeler une table ?</p>
+<p><pre><code class="sas">    - clic droit sur la librairie dans le panneau serveur
+    - Propriétés
+    - le libname de la table est &quot;libref&quot;
+    - le chemin matériel des bases est &quot;Emplacement&quot;
+</code></pre><br />
+</em></p>
+<p>Autrement dit avec les tables mco15bd : <br />
+<pre><code class="sas">data truc; set mco15bd.fixe (obs = 100); run;
+</code></pre></p>
+<h4 id="table-mco-fixe"><a name="user-content-table-mco-fixe" href="#table-mco-fixe" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Table mco fixe</h4>
+<p>Ne retenir que les patients au chaînage valide : </p>
+<pre><code class="sas">    - Les codes retours du chaînage FOIN3 sont concaténés en une seule colonne
+    - Créer une variable intermédiare : translate(ano_retour,'','0')
+    - Cette syntaxe remplace tous les '0' de ano_retour : '000000000' par des ''
+    - Filtrer sur translate(ano_retour,'','0') = '' vous permettra de ne retenir que les patients chaînables
+    - La formule fonctionne quels que soient le nombre de codes retours 7, 9, ...
+</code></pre>
+
+<h4 id="table-um"><a name="user-content-table-um" href="#table-um" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Table um</h4>
+<p>C&rsquo;est ici que l&rsquo;on trouve l&rsquo;entité géographique AP-HP : à l&rsquo;AP-HP un séjour = un finess géographique.<br />
+On ne ramène pas de doublons par la jointure du RSA avec le finess um.</p>
+<blockquote>
+<p><em>Attention : ce n&rsquo;est pas le cas sur toute la BN</em></p>
+</blockquote>
+<h4 id="les-tables-en-ssr"><a name="user-content-les-tables-en-ssr" href="#les-tables-en-ssr" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Les tables en SSR</h4>
+<h3 id="les-colonnes-ident-ifiantes"><a name="user-content-les-colonnes-ident-ifiantes" href="#les-colonnes-ident-ifiantes" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Les colonnes &ldquo;ident&rdquo; - ifiantes</h3>
+<h4 id="en-mco"><a name="user-content-en-mco" href="#en-mco" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>En MCO</h4>
+<p>Une seule colonne identifiante du séjour (ident). Les informations séquentielles sont codées dans la table um avec les passages de rum d&rsquo;un séjour.</p>
+<h4 id="en-ssr-psy-et-had"><a name="user-content-en-ssr-psy-et-had" href="#en-ssr-psy-et-had" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>En SSR, PSY et HAD</h4>
+<p>Deux colonnes sont identifiantes : <br />
+    - l&rsquo;une identifie le séjour (ident_sej)<br />
+    - l&rsquo;autre identifie le résumé hebdomadaire, la séquence, la sous-séquence (ident).</p>
+<h4 id="des-nomenclatures"><a name="user-content-des-nomenclatures" href="#des-nomenclatures" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Des nomenclatures</h4>
+<h3 id="import-export"><a name="user-content-import-export" href="#import-export" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Import / Export</h3>
+<h4 id="exporter-un-fichier-en-txt"><a name="user-content-exporter-un-fichier-en-txt" href="#exporter-un-fichier-en-txt" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Exporter un fichier en .txt</h4>
+<p>Comment exporter un fichier au séparateur tabulation dans les répertoires et sous-répertoires de la plateforme.</p>
+<p>Un proc export au format txt est possible en tapant les morceaux de programmes suivants.<br />
+Dans SEG : Fichier &gt; Nouveau &gt; Programme</p>
+<p>Exemples avec la table &ldquo;maps.belize&rdquo; : </p>
+<h5 id="repertoire-commun"><a name="user-content-repertoire-commun" href="#repertoire-commun" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Répertoire commun</h5>
+<pre><code class="sas">proc export data=maps.belize outfile=&quot;~/commun/belize.txt&quot; ; run;
+</code></pre>
+
+<h5 id="repertoire-perso"><a name="user-content-repertoire-perso" href="#repertoire-perso" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Répertoire perso</h5>
+<pre><code class="sas">proc export data=maps.belize outfile=&quot;~/perso/belize.txt&quot; ; run;
+</code></pre>
+
+<h5 id="repertoire-persomon_rep"><a name="user-content-repertoire-persomon_rep" href="#repertoire-persomon_rep" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Répertoire perso/mon_rep</h5>
+<pre><code class="sas">proc export data=maps.belize outfile=&quot;~/perso/mon_rep/belize.txt&quot; ; run;
+</code></pre>
+
+<p>Vu autrement : <br />
+<pre><code class="sas">proc export data=maps.belize outfile=&quot;/export/home/gpressiat-6770/perso/mon_rep/belize.txt&quot; ; run;
+</code></pre></p>
+<blockquote>
+<p>NB : Il est nécessaire de savoir taper le symbole ~ : sur windows : &ldquo;Alt Gr + é&rdquo; puis espace pour faire apparaître ce caractère spécial<br />
+Plutôt considérer perso comme un répertoire de programmes / projet SEG .egp, et considérer commun comme l&rsquo;endroit où stocker les tables<br />
+L&rsquo;espace perso correspond à la lettre X<br />
+L&rsquo;espace commun correspond à la lettre Z<br />
+L&rsquo;espace documentation correspond à la lettre Y</p>
+</blockquote>
+<h4 id="exporter-une-table-sas"><a name="user-content-exporter-une-table-sas" href="#exporter-une-table-sas" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Exporter une table sas</h4>
+<h5 id="methode-programme-classique"><a name="user-content-methode-programme-classique" href="#methode-programme-classique" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Méthode programme classique</h5>
+<pre><code class="sas">libname save &quot;~/commun/me/&quot;
+data save.table; set table; run;
+</code></pre>
+
+<h5 id="methode-prise-en-main-seg"><a name="user-content-methode-prise-en-main-seg" href="#methode-prise-en-main-seg" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Méthode prise en main SEG</h5>
+<p>Clic bouton</p>
+<pre><code class="sas">    - Ouvrir la table
+    - Données &gt; Exporter des données vers un PC
+    - Suivre les indications et exporter la table vers ~/commun/me
+</code></pre>
+
+<h4 id="exporter-un-resultat-table-en-excel"><a name="user-content-exporter-un-resultat-table-en-excel" href="#exporter-un-resultat-table-en-excel" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Exporter un résultat table en Excel</h4>
+<pre><code class="sas">    - Ouvrir la table contenant le résultat
+    - CLiquer sur Envoyer à &gt; Microsoft Excel
+    - Excel s'ouvre avec le résultat
+</code></pre>
+
+<h4 id="importer-un-referentiel"><a name="user-content-importer-un-referentiel" href="#importer-un-referentiel" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Importer un référentiel</h4>
+<h5 id="creer-un-repertoire-contenant-un-referentiel"><a name="user-content-creer-un-repertoire-contenant-un-referentiel" href="#creer-un-repertoire-contenant-un-referentiel" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Créer un répertoire contenant un référentiel</h5>
+<blockquote>
+<p>Placer dans le répertoire commun/REFS un référentiel au format sas et au format txt</p>
+</blockquote>
+<h5 id="importer-un-referentiel-au-format-sas"><a name="user-content-importer-un-referentiel-au-format-sas" href="#importer-un-referentiel-au-format-sas" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Importer un référentiel au format sas</h5>
+<pre><code class="sas">libname refs &quot;~/commun/REFS&quot;;
+data tarifs; set refs.tarif; run;
+</code></pre>
+
+<h5 id="importer-un-referentiel-au-format-fichier-texte-et-en-faire-un-table-sas"><a name="user-content-importer-un-referentiel-au-format-fichier-texte-et-en-faire-un-table-sas" href="#importer-un-referentiel-au-format-fichier-texte-et-en-faire-un-table-sas" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Importer un référentiel au format fichier texte et en faire un table sas</h5>
+<blockquote>
+<p><em>C&rsquo;est la procédure identique à celle dans SAS.</em></p>
+</blockquote>
+<pre><code class="sas">%let an         = 16;
+%let classtarif = 008;
+
+filename txtarif &quot;~/commun/REFS/sources/Tarifs_11_20&amp;an..csv&quot;;
+
+data tarif&amp;an.; 
+infile txtarif dlm=&quot;;&quot; firstobs=2 dsd truncover missover;
+    format noghs $4. ghm $6. lib_ghm $200. noseqta $3. anseqta $4.;
+    input  noghs     ghm     lib_ghm
+           binf      bsup    tbase 
+           fexb      texb    texh;
+
+
+    anseqta   = &quot;20&amp;an.&quot;;
+    noseqta   = &quot;&amp;classtarif.&quot;;
+
+    label
+    noseqta       = &quot;N° séquence tarif&quot;
+    anseqta       = &quot;Année séquence tarif&quot;
+    noghs         = &quot;GHS&quot;
+    ghm           = &quot;GHM&quot;
+    binf          = &quot;Borne basse&quot;
+    bsup          = &quot;Borne haute&quot;
+    tbase         = &quot;Tarif de base (€)&quot;
+    fexb          = &quot;Forfait Extrême bas (€)&quot;
+    texb          = &quot;Tarif Extrême bas (€)&quot;
+    texh          = &quot;Tarif Extrême haut (€)&quot;;
+run;
+</code></pre>
+
+<h3 id="programmation"><a name="user-content-programmation" href="#programmation" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Programmation</h3>
+<h4 id="seg-et-le-generateur-de-requetes"><a name="user-content-seg-et-le-generateur-de-requetes" href="#seg-et-le-generateur-de-requetes" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>SEG et le Générateur de requêtes</h4>
+<blockquote>
+<p>Principe général du générateur de requêtes : </p>
+<p>Une ou plusieurs tables en entrée &gt; une table ou un rapport en sortie (résultat).</p>
+</blockquote>
+<h5 id="filtrer-une-table"><a name="user-content-filtrer-une-table" href="#filtrer-une-table" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Filtrer une table</h5>
+<blockquote>
+<p>Filtrer la table des tarifs tout juste importée</p>
+</blockquote>
+<pre><code class="sas">    - Une fois la table importée et ouverte dans SEG
+    - Cliquer sur générateur de requêtes
+    - Glisser/déposer les variables à conserver dans la table résultat
+    - Choisir les modalités du filtre
+    - éventuellement trier les données
+</code></pre>
+
+<blockquote>
+<p>Observer le résultat décrit par le schéma du flux de processus.</p>
+</blockquote>
+<h5 id="colonne-calculee-exemple-des-0-jours-booleen"><a name="user-content-colonne-calculee-exemple-des-0-jours-booleen" href="#colonne-calculee-exemple-des-0-jours-booleen" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Colonne calculée : exemple des 0 jours (booléen)</h5>
+<p>Étapes préliminaires au calcul des taux de chirurgie ambulatoire par finess.<br />
+Filtrer sur les ghm rsatype &lsquo;C&rsquo;.<br />
+Créer une colonne 0 jour / &gt; 0 jour.</p>
+<pre><code class="sas">    - Glisser dans l'environnement flux de processus de SEG la table mco15bd.fixe
+    - Double cliquer dessus
+    - Cliquer sur générateur de requêtes
+    - Glisser/déposer les variables du rapport sur lesquelles on va &quot;compter&quot; : finess ghm duree
+    - filtrer sur les ghm en C (substr(ghm2,3,1)='C')
+    - Cliquer sur colonne calculée : colonne calculée (duree=0)
+    - On obtient une table que l'on peut renommer dans le flux de processus
+</code></pre>
+
+<h5 id="colonne-calculee-compter-par-agregation"><a name="user-content-colonne-calculee-compter-par-agregation" href="#colonne-calculee-compter-par-agregation" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Colonne calculée : Compter par agrégation</h5>
+<p>Compter le nombre de séjours par finess et ghm dans la BN</p>
+<pre><code class="sas">    - Glisser dans l'environnement flux de processus de SEG la table mco15bd.fixe
+    - Double cliquer dessus
+    - Cliquer sur générateur de requêtes
+    - Glisser/déposer les variables du rapport sur lesquelles on va &quot;compter&quot; : finess ghm2
+    - Cliquer sur colonne calculée : colonne agrégée
+    - Le générateur de requête group by puis count()
+    - On obtient une table que l'on peut renommer
+    - clic droit sur générateur de requêtes dans le flux de processus
+    - Dans le champ nom de la sortie taper : work.finess_ghm.
+</code></pre>
+
+<blockquote>
+<p>NB : Pour modifier une requête clic droit sur générateur &gt; modifier dans le flux de processus</p>
+</blockquote>
+<h5 id="jointure-avec-le-generateur-de-requetes-oriente-sql"><a name="user-content-jointure-avec-le-generateur-de-requetes-oriente-sql" href="#jointure-avec-le-generateur-de-requetes-oriente-sql" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Jointure avec le générateur de requêtes (orienté SQL)</h5>
+<p>Repartir de la table des séjours par finess / GHM.<br />
+On va ajouter les informations raison sociale et statut d&rsquo;établissement, et uniquement retenir les établissements DGF.</p>
+<pre><code class="sas">    - Filtrer les établissements MCO dans la table des établissements (nom_gen.finess)
+    - filtrer sur les établissements ex DGF
+    - enregistrer le résultat dans la table work.publics_mco
+    - puis : 
+    - partir de la table work.finess_ghm
+    - Double cliquer dessus
+    - Cliquer sur générateur de requêtes
+    - Cliquer sur joindre des tables
+    - Cliquer sur ajout tables &gt; naviguer dans l'arborescence du serveur
+    - Choisir la table work.public_mco
+    - le schéma SQLien décrit quelle jointure va être produite : ici inner join (tout ce qui est dans a et dans b)
+    - Glisser/déposer les variables que l'on souhaite ajouter : rs t2a
+    - On nomme la table et on exécute la requête
+</code></pre>
+
+<blockquote>
+<p><em>dans le feuillet &ldquo;Code&rdquo; de la fenêtre le code du proc sql est affiché</em></p>
+</blockquote>
+<h5 id="exporter-un-resultat-a-partir-du-flux-de-processus"><a name="user-content-exporter-un-resultat-a-partir-du-flux-de-processus" href="#exporter-un-resultat-a-partir-du-flux-de-processus" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Exporter un résultat à partir du flux de processus</h5>
+<pre><code class="sas">    - Ouvrir la table en double cliquant dessus
+    - Suivre la méthode Données &gt;  Télécharger des fichiers vers un PC &gt; ...
+</code></pre>
+
+<h4 id="faire-du-sas-avec-seg"><a name="user-content-faire-du-sas-avec-seg" href="#faire-du-sas-avec-seg" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Faire du SAS avec SEG</h4>
+<p>Nous avons vu les possibilités proposées par SEG via son Générateur de requêtes.<br />
+Si vos programmes sont tout prêts en SAS, il n&rsquo;y a pas forcément d&rsquo;intérêt à les transcrire en requêtes SEG avec un flux de processus.<br />
+Dans ce cas, pratiquer le SAS est possible.</p>
+<p>Voici comment faire : </p>
+<pre><code class="sas">    - Fichier &gt; Nouveau &gt; ouvrir un programme
+    - Copier votre programme et adapter le à la structure des tables
+    - à chaque exécution d'une étape data, le journal est régénéré
+    - pour suivre le bon déroulement du programme suivre le feuillet &quot;résumé du journal&quot; 
+    (à part gros problème l'essentiel y est indiqué)
+</code></pre>
+
+<h4 id="sauvegarder-son-programme-avec-notepad"><a name="user-content-sauvegarder-son-programme-avec-notepad" href="#sauvegarder-son-programme-avec-notepad" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Sauvegarder son programme avec Notepad++</h4>
+<p>La plateforme montre parfois des difficultés pour sauvegarder des projets / programmes.</p>
+<blockquote>
+<p>Pour ne pas s&rsquo;arracher les cheveux en perdant tout son travail, mieux vaut copier coller son programme de manière régulière en ouvrant un Notepad++ distant en parallèle.</p>
+<p>Notepad ++ présente l&rsquo;intérêt de recharger les fichiers depuis le disque : lorsque vous souhaitez envoyer des bouts de programme de votre PC vers la plateforme, c&rsquo;est le bon intermédiare :<br />
+dans votre Notepad++ sur votre PC, vous pouvez copier un bout de programme / sauvegarder le fichier : il s&rsquo;affichera dans le fichier ouvert dans le Notepad++ de la plateforme. </p>
+</blockquote>
+<h4 id="exemples-de-requetes-sas"><a name="user-content-exemples-de-requetes-sas" href="#exemples-de-requetes-sas" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Exemples de requêtes SAS</h4>
+<h5 id="filtrer-une-table_1"><a name="user-content-filtrer-une-table_1" href="#filtrer-une-table_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Filtrer une table</h5>
+<blockquote>
+<p>Filtrer la table des tarifs importée précédemment</p>
+</blockquote>
+<pre><code class="sas">    PROC SQL;
+        CREATE TABLE WORK.filtre1 AS 
+        SELECT t1.ghm, 
+                t1.tbase
+            FROM WORK.TARIF16 t1
+            WHERE t1.tbase &gt;= 3000;
+    QUIT;
+</code></pre>
+
+<blockquote>
+<p>NB: Pour éxécuter une sélection, contrairement à SAS, F8 ne fonctionne plus, c&rsquo;est F3. Sinon cliquer sur exécuter &ndash; exécuter la sélection</p>
+</blockquote>
+<h5 id="colonne-calculee-exemple-des-0-jours-booleen_1"><a name="user-content-colonne-calculee-exemple-des-0-jours-booleen_1" href="#colonne-calculee-exemple-des-0-jours-booleen_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Colonne calculée : exemple des 0 jours (booléen)</h5>
+<p>Étapes préliminaires au calcul des taux de chirurgie ambulatoire par finess.<br />
+Filtrer sur les ghm rsatype &lsquo;C&rsquo;.<br />
+Créer une colonne 0 jour / &gt; 0 jour.</p>
+<pre><code class="sas">    PROC SQL;
+    CREATE TABLE WORK.ambuz AS 
+    SELECT t1.duree, 
+            t1.finess, 
+            /* zero_jour */
+                ((duree=0)) AS zero_jour, 
+            t1.ghm2
+        FROM MCO15BD.FIXE t1
+        WHERE substr(ghm2,3,1) = 'C';
+    QUIT;
+</code></pre>
+
+<h5 id="colonne-calculee-compter-par-agregation_1"><a name="user-content-colonne-calculee-compter-par-agregation_1" href="#colonne-calculee-compter-par-agregation_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Colonne calculée : Compter par agrégation</h5>
+<p>Compter le nombre de séjours par finess et ghm dans la BN</p>
+<pre><code class="sas">    PROC SQL;
+    CREATE TABLE WORK.Case_mix AS 
+    SELECT t1.finess, 
+            t1.ghm2, 
+            /* Combien */
+                (COUNT(t1.ghm2)) AS Combien
+        FROM MCO15BD.FIXE t1
+        GROUP BY t1.finess,
+                t1.ghm2;
+    QUIT;
+</code></pre>
+
+<h5 id="jointure"><a name="user-content-jointure" href="#jointure" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Jointure</h5>
+<p>Repartir de la table des séjours par finess / GHM.<br />
+On va ajouter les informations raison sociale et statut d&rsquo;établissement, et uniquement retenir les établissements DGF.</p>
+<pre><code class="sas">    PROC SQL;
+    CREATE TABLE WORK.fin_public AS 
+    SELECT t1.finess, 
+            t1.rs, 
+            t1.T2A, 
+            t1.mco
+        FROM NOM_GEN.FINESS t1
+        WHERE t1.mco = '1' and t1.secteur = 'DGF';
+    QUIT;
+
+    PROC SQL;
+    CREATE TABLE WORK.matable AS 
+    SELECT t1.finess, 
+            t1.ghm2, 
+            t1.Combien, 
+            t2.rs, 
+            t2.T2A
+        FROM WORK.CASE_MIX t1
+            INNER JOIN WORK.FIN_PUBLIC t2 ON (t1.finess = t2.finess);
+    QUIT;
+</code></pre>
+
+<h5 id="un-exemple-contextualise"><a name="user-content-un-exemple-contextualise" href="#un-exemple-contextualise" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Un exemple contextualisé</h5>
+<blockquote>
+<p>On s&rsquo;intéresse au taux de chainage valide par établissement sur la base 2015</p>
+</blockquote>
+<pre><code class="sas">
+* Créer la variable cok : chainage valide;
+PROC SQL;
+   CREATE TABLE WORK.chainons AS 
+   SELECT t1.finess, 
+          t1.ano_retour, 
+          t1.duree,
+          /* cok */
+            ((translate(ano_retour,'','0')='')) AS cok
+      FROM MCO15BD.FIXE t1;
+QUIT;
+
+* Compter le nombre de lignes de la variable duree;
+proc means data=chainons nway noprint;
+class finess cok;
+var duree;
+output out = chainons2(drop=_:) n(duree) = nb;
+run;
+
+/* Transposer la variable cok : permet d'avoir deux colonnes  le nombre de rsa
+invalides, le nombre de rsa valides, sur une même ligne, par finess*/
+proc transpose data=chainons2 out=chainons3(drop=_:) prefix=cok_;
+by finess;
+id cok;
+var nb;
+run;
+
+* Remplacer les valeurs manquantes pour les variables numériques par des 0;
+proc stdize data=chainons3 out=chainons3 reponly missing=0;
+var _numeric_;
+run;
+* Calculer le taux de chainage valide;
+data chainons3; set chainons3;
+freqchaine = cok_1/(cok_0 + cok_1);
+run;
+
+* Ajouter la raison sociale et la catégorie d'établissement;
+proc sql undo_policy=none;
+create table chainons3 
+as
+select distinct a.*, b.rs, b.categ
+from chainons3 a inner join nom_gen.finess b
+on a.finess=b.finess
+order by  freqchaine desc;
+quit;
+
+</code></pre>
+
+<h3 id="en-cas-de-difficultes"><a name="user-content-en-cas-de-difficultes" href="#en-cas-de-difficultes" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>En cas de difficultés</h3>
+<p>Contacter le support de la plateforme SEG - Atih<br />
+&ldquo;<br />
+en cas de problème, vous pouvez contacter le support :<br />
+<a href="mailto:support@atih.sante.fr">support@atih.sante.fr</a> ou 0 820 77 1 2 3 4<br />
+&ldquo;</p>
+<blockquote>
+<p><center>SIMAP / DOMU / AP-HP &ndash; 2016<br />
+<img src="///C://SEGEXPORT/LOGO-BLEU-APHP1.jpg" title alt width="200"/><br />
+</center></p>
+</blockquote></article></body></html>

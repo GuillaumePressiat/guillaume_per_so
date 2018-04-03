@@ -1,0 +1,3619 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <title>TS-DOC: TS-688 - Defining Colors using Hex Values</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta name="description" content="Defining Colors using Hex Values" />
+	<meta name="date" content="2012-10-10" /> 
+	
+<!-- replace this variable using codes from the title matrix **note they are case sensitive** -->
+
+<script type="text/javascript">
+var sectionName = "A4";
+</script>
+	
+<!-- ***** DO NOT EDIT ANYTHING UNDER THIS ***** -->
+<!-- ***** DO NOT EDIT ANYTHING UNDER THIS ***** -->
+
+    <!-- Support Site Styles -->
+<link rel="stylesheet" type="text/css" href="/css/sasbase.css" title="default" />
+<link rel="stylesheet" type="text/css" href="/css/gray-bar.css" title="default" />
+<link href="/css/support-masthead.css" type="text/css" rel="stylesheet" media="screen, print" />
+<link href="/css/support-footer.css" type="text/css" rel="stylesheet" media="screen, print" />
+<link rel="stylesheet" type="text/css" href="/css/print.css" media="print" />
+<link rel="stylesheet" type="text/css" href="/includes/support_share/share.css" />
+<link rel="stylesheet" type="text/css" href="/css/live-person.css" />
+<link rel="stylesheet" type="text/css" href="/profile/user/resources/css/loginwindowstyles.css" />
+<style type="text/css">#peb{z-index: 50000 !important;}</style>
+
+
+<!-- Global .js references -->
+<script type="text/javascript" src="/lib/global.js"></script>
+<script type="text/javascript" src="/lib/navigation/topnav.js"></script>
+
+
+<!-- YAHOO Global Object, DOM, Event, and Loader source file -->
+<script type="text/javascript" src="/lib/yui/2.8.1/build/yuiloader-dom-event/yuiloader-dom-event.js"></script>
+<script type="text/javascript" src="/lib/yui/2.8.1/build/cookie/cookie-min.js"></script>
+<script type="text/javascript" src="/lib/yui/2.8.1/build/history/history-min.js"></script> 
+
+<script src="/profile/user/resources/user-profiles-min.2.0.js" type="text/javascript"></script>
+ 
+<!-- Enable Modal dialogs -->
+<script src="/lib/modal/modal.js" type="text/javascript"></script>
+
+<!-- code for Website Opitimizer -->
+
+<!-- Start Visual Website Optimizer Asynchronous Code -->
+<script type='text/javascript'>
+var _vwo_code=(function(){
+var account_id=20166,
+settings_tolerance=2000,
+library_tolerance=2500,
+use_existing_jquery=false,
+// DO NOT EDIT BELOW THIS LINE
+f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&r='+Math.random());var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
+</script>
+<!-- End Visual Website Optimizer Asynchronous Code -->
+
+
+
+    </head>
+
+    <body>
+    <div id="container">
+     <!-- Begin Global Include File (legacy) -->
+<!-- ***** MASTHEAD COLUMN ***** -->
+ 
+<div id="masthead"> 
+<!--stopindex--> 
+<!--googleoff: all-->
+  <div id="sas_logo"><a href="http://www.sas.com/index.html"><img src="/images/SAS_TPTK_logo.gif" alt="SAS Institute. The Power to Know" /></a><p>Providing software solutions since 1976</p></div>
+
+<div id="searchBox"> 
+
+<ul id="login_area">
+
+<li id="login" class="first" style="display: block;"><a class="profhref" onclick="showLoginScreen()" style="padding:0 0 0 15px;">Log in</a> <a href="http://support.sas.com/misc/profilehelp.html" title="Get profile help" style="padding:0 15px 0 5px;"><img src="/images/elements/question-mark.png" alt="Get profile help"></a></li>
+
+<li id="login2" class="logpanel" style="display: block;"><a class="profhref" onclick="handleCreateProfile()">Create profile</a></li>
+
+<li id="logout" class="logpanel" style="padding-left: 15px; border:none; display:none;">Welcome <div id="loginDisplayName"></div><a class="profhref" onclick="processLogoutRequest()">[Log out]</a></li>
+
+<li id="logout3" class="logpanel" style="display:none;"><a href="/profile/user/contact.htm">Edit profile</a></li>
+
+<li id="logout4" class="logpanel" style="display:none;"><a class="profhref" href="/mysas">My SAS</a></li>
+
+</ul>
+
+
+
+ 
+
+ 
+ <form method="get" action="http://support.sas.com/dsearch">
+ <fieldset class="search">
+ 	  <span>
+      <input class="searchButton" type="submit" name="Find" value="Search" />
+	  </span> 
+  
+	  <select name="ct" class="searchSelect">
+	    <option label="Search support.sas.com" value="">Search support.sas.com</option>
+	    <optgroup label="Select a sub-section to search"></optgroup>
+	    <option label="KNOWLEDGE BASE" value="5200">KNOWLEDGE BASE</option>
+	    <option label="&nbsp;&nbsp;&nbsp;&nbsp;Products &amp; Solutions" value="5270">&nbsp;&nbsp;&nbsp;&nbsp;Products &amp; Solutions</option>
+	    <option label="&nbsp;&nbsp;&nbsp;&nbsp;System Requirements" value="5220">&nbsp;&nbsp;&nbsp;&nbsp;System Requirements</option>
+	    <option label="&nbsp;&nbsp;&nbsp;&nbsp;Install Center" value="5230">&nbsp;&nbsp;&nbsp;&nbsp;Install Center</option>
+  	    <option label="&nbsp;&nbsp;&nbsp;&nbsp;Third-Party Software Reference" value="5280">&nbsp;&nbsp;&nbsp;&nbsp;Third-Party Software Reference</option>
+	    <option label="&nbsp;&nbsp;&nbsp;&nbsp;Documentation" value="5210">&nbsp;&nbsp;&nbsp;&nbsp;Documentation</option>
+	    <option label="&nbsp;&nbsp;&nbsp;&nbsp;Papers" value="5240">&nbsp;&nbsp;&nbsp;&nbsp;Papers</option>
+	    <option label="&nbsp;&nbsp;&nbsp;&nbsp;Samples &amp; SAS Notes" value="51000">&nbsp;&nbsp;&nbsp;&nbsp;Samples &amp; SAS Notes</option>
+	    <option label="&nbsp;&nbsp;&nbsp;&nbsp;Focus Areas" value="5250">&nbsp;&nbsp;&nbsp;&nbsp;Focus Areas</option>
+	    
+	    <option label="SUPPORT" value="4100">SUPPORT</option>
+	    <option label="&nbsp;&nbsp;&nbsp;&nbsp;License Assistance" value="4110">&nbsp;&nbsp;&nbsp;&nbsp;License Assistance</option>
+	    <option label="&nbsp;&nbsp;&nbsp;&nbsp;Manage My Software Account" value="4120">&nbsp;&nbsp;&nbsp;&nbsp;Manage My Software Account</option>
+	    <option label="&nbsp;&nbsp;&nbsp;&nbsp;Downloads &amp; Hot Fixes" value="4130">&nbsp;&nbsp;&nbsp;&nbsp;Downloads &amp; Hot Fixes</option>
+	    
+	    <option label="TRAINING &amp; BOOKS" value="5300">TRAINING &amp; BOOKS</option>
+	    <option label="&nbsp;&nbsp;&nbsp;&nbsp;Books" value="5340">&nbsp;&nbsp;&nbsp;&nbsp;Books</option>
+	    <option label="&nbsp;&nbsp;&nbsp;&nbsp;Training" value="5320">&nbsp;&nbsp;&nbsp;&nbsp;Training</option>
+	    <option label="&nbsp;&nbsp;&nbsp;&nbsp;Certification" value="5330">&nbsp;&nbsp;&nbsp;&nbsp;Certification</option>
+	    <option label="&nbsp;&nbsp;&nbsp;&nbsp;SAS Global Academic Program" value="5310">&nbsp;&nbsp;&nbsp;&nbsp;SAS Global Academic Program</option>
+	    <option label="&nbsp;&nbsp;&nbsp;&nbsp;SAS OnDemand For Academics" value="5325">&nbsp;&nbsp;&nbsp;&nbsp;SAS OnDemand For Academics</option>
+	    
+	    <option label="HAPPENINGS" value="5400">HAPPENINGS</option>
+	    <option label="&nbsp;&nbsp;&nbsp;&nbsp;User Groups" value="5410">&nbsp;&nbsp;&nbsp;&nbsp;User Groups</option>
+	    <option label="&nbsp;&nbsp;&nbsp;&nbsp;SAS Talks" value="5420">&nbsp;&nbsp;&nbsp;&nbsp;SAS Talks</option>
+	    <option label="&nbsp;&nbsp;&nbsp;&nbsp;E-Newsletters" value="5430">&nbsp;&nbsp;&nbsp;&nbsp;E-Newsletters</option>
+	  </select>
+
+    
+	<input class="searchField" type="text" title="Enter your search term" name="qt" value="" size="30" tabindex="1" accesskey="s" onFocus="clearField(this)" />
+	    <input id="searchCollection" type="hidden" name="col" value="suppprd" /> 
+      <input type="hidden" name="nh" value="25" />
+      <input type="hidden" name="qp" value="" />
+      <input type="hidden" name="qc" value="suppsas" />
+      <input type="hidden" name="ws" value="1" />
+      <input type="hidden" name="qm" value="1" />
+      <input type="hidden" name="st" value="1" />
+      <input type="hidden" name="lk" value="1" />
+      <input type="hidden" name="rf" value="0" />
+      <input type="hidden" name="oq" value="" />
+      <input type="hidden" name="rq" value="0" />
+      </fieldset> 
+    </form>
+  
+  <div style="font-family: Arial, Helvetica, sans-serif; font-size: 9px; font-weight: normal; text-align: right;"><a href="http://support.sas.com/search/index.html">Advanced Search</a>&nbsp;&nbsp;</div>
+  </div>
+
+</div>
+
+
+<!--googleon: all-->
+<!--startindex-->
+<!-- ***** NAVIGATION ***** -->
+<div id="mastheadnav">
+<!--stopindex--> 
+<!--googleoff: all-->
+  <ul>
+    <li>
+      <p class="homeon"><a href="http://support.sas.com/index.html" accesskey="h">support.sas.com</a></p>
+    </li>
+    <li>
+      <p id="nav_1"><a href="http://support.sas.com/resources">Knowledge Base</a></p>
+    </li>
+    <li>
+      <p id="nav_2"><a href="http://support.sas.com/techsup">Support</a></p>
+    </li>
+    <li>
+      <p id="nav_3"><a href="http://support.sas.com/learn">Training &amp; Books</a></p>
+    </li>
+    <li>
+      <p id="nav_4"><a href="http://support.sas.com/community">Happenings</a></p>
+    </li>
+    <li>
+      <p id="nav_5"><a href="/store/">Store</a></p>
+    </li>     
+    <li>
+      <p id="nav_4"><a href="https://communities.sas.com/community/support-communities">Support Communities</a></p>
+    </li>
+   
+    <!-- li>
+      <a href="#content" title="begin main content" name="content">&nbsp;</a>
+    </li -->
+  </ul>
+ <!--googleon: all-->
+ <!--startindex-->
+</div>
+
+<div class="clear">
+  <!-- -->
+</div>
+
+
+<!-- ***** PEB ***** -->
+<div id="peb">
+
+<div id="sectionTitlediv" class="L0" style="float: left;">
+</div>
+
+<!--stopindex--> 
+<!--googleoff: all-->
+<div style="float: right;">
+	<ul class="peb">
+	<li style="background: url(/images/print_icon.png) no-repeat 0 0;"><a href="#" onclick="PrintPage();" title="Print">Print</a> &nbsp;|</li>
+	<li style="background: url(/images/feedback_icon.png) no-repeat 0 0;"><a href="/feedback" title="Feedback">Feedback</a> &nbsp;|</li>
+	<li style="padding: 0px;"><script src="/includes/share/dropdown.js" type="text/javascript" language="javascript"></script>
+<script src="https://www.sas.com/includes/share/email/emailinclude3.js" type="text/javascript" language="javascript"></script>
+<script type="text/javascript" language="javascript">
+	<!--
+	var cssNode = document.createElement('link');
+	cssNode.type = 'text/css';
+	cssNode.rel = 'stylesheet';
+	cssNode.href = '/includes/share/share.css';
+	cssNode.media = 'screen';
+	cssNode.title = 'dynamicLoadedSheet';
+	document.getElementsByTagName("head")[0].appendChild(cssNode);
+	//-->
+</script>
+      <div id="social"><a class="share" onMouseOver="mopen('share')" onMouseOut="mclosetime()">Share</a> 
+        <div id="share" style="visibility: hidden;" onMouseOver="mcancelclosetime()" onMouseOut="mclosetime()">
+        <ul>
+          <li><a href="javascript:showEmailForm();" style="background-image: url(/includes/share/images/email.gif); padding-top: 12px; background-position: 10px 18px;">E-mail</a></li>
+          <li><script language="javascript" type="text/javascript">document.write("<a href=\"http://del.icio.us/post?url="+document.location.href+"%3Futm_medium=share%26utm_source=delicious&title="+document.title+"\" onclick=\"javascript:pageTracker._trackPageview(\'\/share\/delicious\');\" style=\"background-image: url(\/includes\/share\/images\/delicious.gif);\">Del.icio.us<\/a>")</script></li>
+          <li><script language="javascript" type="text/javascript">document.write("<a href=\"http://digg.com/submit?phase=2&url="+document.location.href+"%3Futm_medium=share%26utm_source=digg&title="+document.title+"\" onclick=\"javascript:pageTracker._trackPageview(\'\/share\/digg\');\" style=\"background-image: url(\/includes\/share\/images\/digg.gif);\">Digg<\/a>")</script></li>
+          <li><script language="javascript" type="text/javascript">document.write("<a href=\"http://www.facebook.com/share.php?u="+document.location.href+"%3Futm_medium=share%26utm_source=facebook&t="+document.title+"\" onclick=\"javascript:pageTracker._trackPageview(\'\/share\/facebook\');\" style=\"background-image: url(\/includes\/share\/images\/facebook.gif);\">Facebook<\/a>")</script></li>
+          <li><script language="javascript" type="text/javascript">document.write("<a href=\"http://www.linkedin.com/shareArticle?mini=true&url="+document.location.href+"%3Futm_medium=share%26utm_source=linkedin&title="+document.title+"\" onclick=\"javascript:pageTracker._trackPageview(\'\/share\/linkedin\');\" style=\"background-image: url(\/includes\/share\/images\/linkedin.gif);\">LinkedIn<\/a>")</script></li>
+          <li><script language="javascript" type="text/javascript">document.write("<a href=\"http://reddit.com/submit?url="+document.location.href+"%3Futm_medium=share%26utm_source=reddit&title="+document.title+"\" onclick=\"javascript:pageTracker._trackPageview(\'\/share\/reddit\');\" style=\"background-image: url(\/includes\/share\/images\/reddit.gif);\">Reddit<\/a>")</script></li>
+          <li><script language="javascript" type="text/javascript">document.write("<a href=\"http://www.stumbleupon.com/submit?url="+document.location.href+"%3Futm_medium=share%26utm_source=stumbledupon&title="+document.title+"\" onclick=\"javascript:pageTracker._trackPageview(\'\/share\/stumbledupon\');\" style=\"background-image: url(\/includes\/share\/images\/stumbledupon.gif);\">StumbleUpon<\/a>")</script></li>
+          <li><script language="javascript" type="text/javascript">document.write("<a href=\"http://technorati.com/faves?add="+document.location.href+"%3Futm_medium=share%26utm_source=technorati\" onclick=\"javascript:pageTracker._trackPageview(\'\/share\/technorati\');\" style=\"background-image: url(\/includes\/share\/images\/technorati.gif);\">Technorati<\/a>")</script></li>
+          <li><script language="javascript" type="text/javascript">document.write("<a href=\"http://twitter.com/home?status="+document.location.href+"%3Futm_medium=share%26utm_source=twitter\" onclick=\"javascript:pageTracker._trackPageview(\'\/share\/twitter\');\" style=\"background-image: url(\/includes\/share\/images\/twitter.gif);\">Twitter<\/a>")</script></li>
+        </ul>
+        </div>
+	<span style="clear: both; height: 0px;"> </span>
+
+      </div> 
+
+<div id="emailFormDiv" style="display: none;"> 
+  <div id="closeWidget"><a href="javascript:hideEmailForm();"><img src="/includes/share/email/close.png" alt="" width="31" height="30"></a></div>
+  <h2>E-mail This Page</h2>
+  <div class="bd" id="bdform"> 
+    <form name="emailFriendForm" id="emailFriendForm" method="post" action="">
+      <label for="senderName">Your Name:<span class="required">*</span></label> 
+      <input type="textbox" id="senderName" name="senderName" value="" />
+      <br class="clear" />
+      <label for="fromEmailAddresss">Your E-mail:<span class="required">*</span></label> 
+      <input type="textbox" id="fromEmailAddress" name="fromEmailAddress" value="" />
+      <br class="clear" />
+      <label for="toEmailAddress">Recipient E-mail:<span class="required">*</span></label> 
+      <input type="textbox" id="toEmailAddress" name="toEmailAddress" value="" />
+      <br class="clear" />
+      <label for="ccSender">Send a copy to me</label> 
+      <input type="checkbox" id="ccSender" name="ccSender" />
+      <br class="clear" />
+      <label for="note">Personal Message:</label><br /><textarea id=note name=note rows=9 cols=33></textarea> <br class="clear" />
+      <div id="instructions">* indicates a required field</div>
+      <input type="hidden" name="url" value="www.yahoo.com" />
+      <input type="hidden" name="virtualFolder" value="support" />
+      <input type="hidden" name="template" value="" />
+      <span class="submitbutton">
+      <input type="button" value="Send E-mail" id="sendEmail" onclick="processEmailSubmit();" />
+      </span>
+    </form>
+  </div>
+  <div class="ft"><span>
+  <div id="serverResponse"></div>
+  </span>
+  <div class="br"></div>
+</div>
+</div></li>	
+	</ul>	
+  <!--googleon: all-->
+  <!--startindex-->
+</div> 
+</div> 
+
+<div class="clear"><!-- --></div>
+
+
+
+   <!-- This is the space for the emergency banner text --> 
+   <!-- start comment block 
+   <div id="alertBar">
+     Replace this text with the emergency banner text </div>
+   end comment block -->
+   <!-- End emergency banner text -->
+
+<!-- End Global Include File  -->
+    <!--  LEFT NAVIGATION TABLE INCLUDE BEGINS-->
+    <div id="leftcolumn">
+    <!--stopindex--> 
+    <!--googleoff: all-->
+    <span><h3><a href="/resources/index.html">Knowledge Base</a></h3>
+<ul>
+<li><a href="/software/index.html">Products &amp; Solutions</a></li>
+<li><a href="/resources/sysreq/index.html">System Requirements</a></li>
+<li><a href="/documentation/installcenter/index.html">Install Center</a></li>
+<li><a href="/resources/thirdpartysupport/index.html">Third-Party Software Reference</a></li>
+<li><a href="/documentation/index.html">Documentation</a></li>
+<li class="leftnavon"><a href="/resources/papers/index.html">Papers</a></li>
+<li><a href="/notes/index.html">Samples & SAS Notes</a></li>
+<li><a href="/rnd/index.html">Focus Areas</a></li>
+</ul>
+</span>
+
+
+    <!--googleon: all-->
+    <!--startindex-->
+    </div>
+    <!--  LEFT NAVIGATION TABLE INCLUDE ENDS -->
+
+     <div id="content2"><a id="content"></a>
+	 
+<!-- ***** DO NOT EDIT ANYTHING ABOVE THIS ***** -->
+<!-- ***** DO NOT EDIT ANYTHING ABOVE THIS ***** -->
+
+<table border="5" cellpadding="7" cellspacing="7" width="100%">
+  <tr>
+
+<!-- ******* BEGIN MAIN BODY IN MIDDLE COLUMN ***************************************** -->
+    <td width="70%" valign="top">
+<!--end code here -->
+<h1>TS-688</h1>
+
+<h2>Defining Colors using Hex Values</h2>
+<h3>With the Gray-Scale and RGB Color Naming Schemes</h3>
+
+<h4>Introduction</h4>
+<p>In Version 6, SAS/Graph includes predefined names for 290 different colors. Additional predefined color names became available for over 100 colors for SAS/Graph output in Version 9.  These are the HTML color names listed in the SAS Registry. Together the list of predefined colors give you over 400 colors to choose from.  See the <a href="#predefined">&quot;Predefined Colornames&quot;</a> section of this document for the names of the available pre-defined colors.</p>
+<p>In any of these releases of the SAS system, you can also define your own colors in SAS/Graph using one of the color-naming schemes.  The color-naming schemes are documented in the &quot;SAS/Graph Software Reference&quot; section of the OnlineDoc, under &quot;SAS/Graph Colors&quot;.  This document focuses on two of those schemes, gray-scale and RGB.</p>
+<p>Using the gray-scale color-naming system, it is possible to define 256 different shades of gray ranging from pure black to pure white.  With the RGB color-naming system, it is possible to define over 16 million colors.  Both color-naming schemes in SAS use hexadecimal notation to define the colors.</p>
+<h4>Understanding Hex Values</h4>
+<p>In everyday life we typically use numbers from the base 10 system, where values range from 0 to 9 before an additional digit is needed.  In a hexadecimal numbering system, each digit can represent 16 values, typically represented as 0 through 9 and then A through F, as shown in the following table.</p>
+<table border="1" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="middle"><p class="data">Base 10</p></td>
+<td valign="middle"><p class="data">Base 16 (Hexadecimal)</p></td>
+</tr>
+<tr>
+<td valign="middle"><p class="c data">0</p></td>
+<td valign="middle"><p class="c data">0</p></td>
+</tr>
+<tr>
+<td valign="middle"><p class="c data" >1</p></td>
+<td valign="middle"><p class="c data" >1</p></td>
+</tr>
+<tr>
+<td valign="middle"><p class="c data" >2</p></td>
+<td valign="middle"><p class="c data" >2</p></td>
+</tr>
+<tr>
+<td valign="middle"><p class="c data" >3</p></td>
+<td valign="middle"><p class="c data" >3</p></td>
+</tr>
+<tr>
+<td valign="middle"><p class="c data" >4</p></td>
+<td valign="middle"><p class="c data" >4</p></td>
+</tr>
+<tr>
+<td valign="middle"><p class="c data" >5</p></td>
+<td valign="middle"><p class="c data" >5</p></td>
+</tr>
+<tr>
+<td valign="middle"><p class="c data" >6</p></td>
+<td valign="middle"><p class="c data" >6</p></td>
+</tr>
+<tr>
+<td valign="middle"><p class="c data" >7</p></td>
+<td valign="middle"><p class="c data" >7</p></td>
+</tr>
+<tr>
+<td valign="middle"><p class="c data" >8</p></td>
+<td valign="middle"><p class="c data" >8</p></td>
+</tr>
+<tr>
+<td valign="middle"><p class="c data" >9</p></td>
+<td valign="middle"><p class="c data" >9</p></td>
+</tr>
+<tr>
+<td valign="middle"><p class="c data" >10</p></td>
+<td valign="middle"><p class="c data" >A</p></td>
+</tr>
+<tr>
+<td valign="middle"><p class="c data" >11</p></td>
+<td valign="middle"><p class="c data" >B</p></td>
+</tr>
+<tr>
+<td valign="middle"><p class="c data" >12</p></td>
+<td valign="middle"><p class="c data" >C</p></td>
+</tr>
+<tr>
+<td valign="middle"><p class="c data" >13</p></td>
+<td valign="middle"><p class="c data" >D</p></td>
+</tr>
+<tr>
+<td valign="middle"><p class="c data" >14</p></td>
+<td valign="middle"><p class="c data" >E</p></td>
+</tr>
+<tr>
+<td valign="middle"><p class="c data" >15</p></td>
+<td valign="middle"><p class="c data" >F</p></td>
+</tr>
+</table>
+
+<p>In the base 10 system, a two-digit number can represent 100 values ranging from 0 through 99.  In the base 16 system, a two digit number can represent 256 values, ranging from 00 through FF.   A six-digit number in the base 10 system represents 10<sup>6</sup> (10 x 10 x 10 x 10 x 10 x 10) values, or 1,000,000 numbers.  A six-digit number in the hexadecimal system represents 16<sup>6</sup> (16 x 16 x 16 x 16 x 16 x 16) values, or 16,777,215 numbers.   </p>
+<p>Methods for manipulating numbers, such as addition, subtraction, and multiplication, work the same in both systems; it is the representation of the value that is different.  For example, each of these equations represents the same values:</p>
+<table CELLSPACING=0 CELLPADDING=0 WIDTH=300>
+<tr>
+<td valign="top" colspan="2"><p class="c data">Base 10</p></td>
+<td valign="top" colspan="2"><p class="c data" >Base 16</p></td>
+</tr>
+<tr>
+<td valign="top" width="33"><p></p></td>
+<td valign="top"><p class="code">9 + 1  = 10</p></td>
+<td valign="top" width="36"><p></p></td>
+<td valign="top"><p class="code">9 + 1  = A</p></td>
+</tr>
+<tr>
+<td valign="top"><p></p></td>
+<td valign="top"><p class="code">8 + 8  = 16</p></td>
+<td valign="top"><p></p></td>
+<td valign="top"><p class="code">8 + 8  = 10</p></td>
+</tr>
+<tr>
+<td valign="top" colspan="2"><p class="code" align=center>3 x 85 = 255</p></td>
+<td valign="top" colspan="2"><p class="code" align=center>3 x 55 = FF</p></td>
+</tr>
+</table>
+
+
+
+<p>When using the hexadecimal system to define you own colors, the exact value for the color is not as significant as the relationship of the digits in the value to each other, and the relationship of the value of this color to other colors.</p>
+
+
+<p class="head1">The Gray-Scale Color-Naming Scheme</p>
+<p>The gray-scale color naming scheme uses a two digit hex value to define up to 256 shades of gray.  In SAS, the root word GRAY is used to distinguish this naming system from the other color-naming systems.  For example, GRAY00 is black, GRAYFF is white, and GRAY88 is a medium gray.</p>
+<p>The following chart displays all 256 Gray-scale colors.</p>
+<h4>Gray-Scale Colors</h4><br /><img src="gray.gif" alt="" />
+
+<p>To define the Gray-scale colors using this chart, build the names as follows:</p>
+<code>&quot;GRAY&quot; &#124;&#124; FIRST DIGIT &#124;&#124; SECOND DIGIT</code>
+
+<p>For example, the last square on the bottom right represents the value GRAY0F, a very dark gray.  The square on the top of the left vertical axis represents the value GRAYF0, a very light gray.</p>
+<h4>The RGB Color-Naming System</h4>
+<p  class="text">The RGB color system is commonly used in both web graphics and web documents.  This system is was designed to define colors as the human eye perceives them, as light.  The three foundation or primary colors of this system are red, green, and blue.  </p>
+<p>The color system is additive: varying values for red, green, and blue can be combined to form the other colors.  Because the system is based upon the properties of light, an absence of all color is black and full saturation in all colors is white.  Each secondary color is the sum of two primary colors:</p>
+<ul><li>Red + Blue = Purple</li>
+<li>Red + Green = Yellow</li>
+<li>Green + Blue = Cyan</li>
+</ul>
+<p>The SAS RGB color-naming scheme is similar to the standard HTML color-naming scheme.  Both use a six-digit hexadecimal value to represent the amount of red, green, and blue that define the color.  The first pair of digits represents the amount of red in the color; the second pair of digits is for blue, and the third is for green.  In SAS, the color names must also be preceded by the letters &quot;CX&quot; to distinguish this color-naming system from other SAS color-naming systems.  The general form of the names in SAS is as follows:</p>
+<code>&quot;CX&quot; &#124;&#124; RED RED &#124;&#124; GREEN GREEN &#124;&#124; BLUE BLUE</code>
+
+<p>This system allows for the creation of over 16 million different colors.  All 256 grayscale colors are included in this color system.  </p>
+<h4>Listing the RGB Colors</h4>
+<p>Because the RGB system defines over 16 million colors, it would take many pages to display them all.  It is also difficult to distinguish colors that have very similar values.</p>
+<p>A good reference for a broad range of colors are the 216 colors commonly used on the web.  These 216 colors form what is known as the &quot;web-safe&quot; or &quot;non-dithering&quot; color palette.  They were traditionally used to prevent color-mapping or dithering of images when the majority of computer displays only supported 256 colors.  Although most displays today are capable of representing millions of colors, this palette still remains popular.  </p>
+<p>The only digits used in web-safe colors are 0, 3, 6, 9, C, and F.  As you can see in the chart, the convention is for the values of red, green, and blue to use the same value for both digits.</p>
+
+<h4>The 216-Websafe Colors</h4>
+
+<p>By varying the amounts of red, green, and blue in a given value, you can begin to define your own colors.  Remember that the names must be preceded by the letters &quot;CX&quot; in order to identify the value as an RGB color in SAS.</p>
+
+<h4>Converting Color Values from Other Software Programs</h4>
+<p>Many software programs that allow you to edit their own colors can display the RGB values for that color.  In these programs the RGB colors are usually represented as three base-10 values ranging from 0 to 255.  For example, the following screen-shots show the RGB values for a particular shade of blue as displayed by two different software programs:</p>
+
+<table cellspacing="0" border="0" cellpadding="3" width="630">
+<tr>
+<td width="58%" valign="top"><img src="pickcolor1.jpg" alt="" /></td>
+<td width="42%" valign="top"><img src="pickcolor2.gif" alt="" /></td>
+</tr>
+</table>
+
+<p>To match RGB colors in your SAS output to RGB colors from another software program, you can translate the decimal values to hexadecimal representation using a SAS program.  For example, the following program converts the color blue above from the base 10 representation to hexadecimal values that can be used to represent the RGB color in SAS.</p>
+
+	<pre><code>
+	data _null_;<br />
+	/* Input values */<br />
+	&nbsp;red=42;<br />
+	&nbsp;green=31;<br />
+	&nbsp;blue=170;<br />
+	
+	/* Convert to hex */<br />
+	&nbsp;hexred=put(red,hex2.);<br />
+	&nbsp;hexgreen=put(green,hex2.);<br />
+	&nbsp;hexblue=put(blue,hex2.);<br />
+	
+	/* Create as a SAS RGB color */<br />
+	&nbsp;sasrgb=&quot;CX&quot;&#124;&#124;hexred&#124;&#124;hexgreen&#124;&#124;hexblue;<br />
+	
+	/* Write the new value to the Log */<br />
+	&nbsp;put sasrgb;<br />
+	run;</code>
+</pre>
+
+<p>For this shade of blue, the SAS RGB color is <code>CX2A1FAA</code>.</p>
+<a name="predefined"></a> <h4>Predefined Colornames</h4>
+<p><img src="logo90n.png" alt="" width="59" height="74">In SAS 6, 290 different colors were available by their predefined names, such as RED, ORANGE, and VIGB (&quot;vivid greenish blue&quot;).  
+In SAS 8.2, 140 predefined colors were added that could be used with non-graphical output.  In Version 9.0, you can specify these HTML colors for SAS/Graph output.  These colors, such as BlanchedAlmond and SeaShell, are listed in the SAS Registry under the key &quot;COLORNAMES\HTML&quot;. The RGB values for the colors are displayed next to each name. </p>
+
+<p>The following table shows the SAS/Graph color names and the HTML color names.  The presence of a Description indicates the color is one of the SAS/Graph colors.  RGB and HLS colors are shown for both types of colors.  The color should be referenced by its name, RGB, or HLS value.  Names do not contain spaces, so they do not need to be specified in quotes.  Colors listed by both schemes, such as BLACK and YELLOW, are represented only once in the table.</p>
+
+<div class="branch">
+<div>
+<div align="center">
+<table class="table" cellspacing="2" cellpadding="1" rules="groups" frame="box" border="1" summary="Procedure Report: Detailed and/or summarized report">
+<colgroup>
+<col></col>
+<col></col>
+<col></col>
+<col></col>
+<col></col>
+</colgroup>
+<thead>
+<tr>
+<th class=" header" width="125">Name</th>
+<th class=" header" width="100">RGB Value</th>
+<th class=" header" width="100">HLS Value</th>
+<th class=" header" width="100">Sample</th>
+<th class=" header" width="175">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class=" data">BLACK</td>
+<td class=" data">CX000000</td>
+<td class=" data">H0000000</td>
+<td class=" data" style=" background-color: #000000;"></td>
+<td class=" data" style=" font-style: italic;">Black</td>
+</tr>
+<tr>
+<td class=" data">Navy</td>
+<td class=" data">CX000080</td>
+<td class=" data">H00040FF</td>
+<td class=" data" style=" background-color: #000080;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">DarkBlue</td>
+<td class=" data">CX00008B</td>
+<td class=" data">H00046FF</td>
+<td class=" data" style=" background-color: #00008B;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">MediumBlue</td>
+<td class=" data">CX0000CD</td>
+<td class=" data">H00067FF</td>
+<td class=" data" style=" background-color: #0000CD;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">BLUE</td>
+<td class=" data">CX0000FF</td>
+<td class=" data">H00080FF</td>
+<td class=" data" style=" background-color: #0000FF;"></td>
+<td class=" data" style=" font-style: italic;">Blue</td>
+</tr>
+<tr>
+<td class=" data">DarkGreen</td>
+<td class=" data">CX006400</td>
+<td class=" data">H0EF32FF</td>
+<td class=" data" style=" background-color: #006400;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">Green</td>
+<td class=" data">CX008000</td>
+<td class=" data">H0EF40FF</td>
+<td class=" data" style=" background-color: #008000;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">Teal</td>
+<td class=" data">CX008080</td>
+<td class=" data">H12C40FF</td>
+<td class=" data" style=" background-color: #008080;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">DarkCyan</td>
+<td class=" data">CX008B8B</td>
+<td class=" data">H12C46FF</td>
+<td class=" data" style=" background-color: #008B8B;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">DeepSkyBlue</td>
+<td class=" data">CX00BFFF</td>
+<td class=" data">H13980FF</td>
+<td class=" data" style=" background-color: #00BFFF;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">DarkTurquoise</td>
+<td class=" data">CX00CED1</td>
+<td class=" data">H12C69FF</td>
+<td class=" data" style=" background-color: #00CED1;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">MediumSpringGreen</td>
+<td class=" data">CX00FA9A</td>
+<td class=" data">H1157DFF</td>
+<td class=" data" style=" background-color: #00FA9A;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">GREEN</td>
+<td class=" data">CX00FF00</td>
+<td class=" data">H0F080FF</td>
+<td class=" data" style=" background-color: #00FF00;"></td>
+<td class=" data" style=" font-style: italic;">Green</td>
+</tr>
+<tr>
+<td class=" data">SpringGreen</td>
+<td class=" data">CX00FF7F</td>
+<td class=" data">H10D80FF</td>
+<td class=" data" style=" background-color: #00FF7F;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">CYAN</td>
+<td class=" data">CX00FFFF</td>
+<td class=" data">H12C80FF</td>
+<td class=" data" style=" background-color: #00FFFF;"></td>
+<td class=" data" style=" font-style: italic;">Cyan</td>
+</tr>
+<tr>
+<td class=" data">BRBL</td>
+<td class=" data">CX010101</td>
+<td class=" data">H0980101</td>
+<td class=" data" style=" background-color: #010101;"></td>
+<td class=" data" style=" font-style: italic;">Brownish black</td>
+</tr>
+<tr>
+<td class=" data">VIB</td>
+<td class=" data">CX090766</td>
+<td class=" data">H00136DF</td>
+<td class=" data" style=" background-color: #090766;"></td>
+<td class=" data" style=" font-style: italic;">Vivid blue</td>
+</tr>
+<tr>
+<td class=" data">VDEYG</td>
+<td class=" data">CX0A260E</td>
+<td class=" data">H0F81894</td>
+<td class=" data" style=" background-color: #0A260E;"></td>
+<td class=" data" style=" font-style: italic;">Very deep yellowish green</td>
+</tr>
+<tr>
+<td class=" data">DEB</td>
+<td class=" data">CX100F26</td>
+<td class=" data">H0011B6D</td>
+<td class=" data" style=" background-color: #100F26;"></td>
+<td class=" data" style=" font-style: italic;">Deep blue</td>
+</tr>
+<tr>
+<td class=" data">VIG</td>
+<td class=" data">CX118044</td>
+<td class=" data">H10C48C3</td>
+<td class=" data" style=" background-color: #118044;"></td>
+<td class=" data" style=" font-style: italic;">Vivid green</td>
+</tr>
+<tr>
+<td class=" data">VDAGB</td>
+<td class=" data">CX121519</td>
+<td class=" data">H14E162D</td>
+<td class=" data" style=" background-color: #121519;"></td>
+<td class=" data" style=" font-style: italic;">Very dark greenish blue</td>
+</tr>
+<tr>
+<td class=" data">VDAG</td>
+<td class=" data">CX121915</td>
+<td class=" data">H10C162D</td>
+<td class=" data" style=" background-color: #121915;"></td>
+<td class=" data" style=" font-style: italic;">Very dark green</td>
+</tr>
+<tr>
+<td class=" data">VDABG</td>
+<td class=" data">CX121919</td>
+<td class=" data">H12A162D</td>
+<td class=" data" style=" background-color: #121919;"></td>
+<td class=" data" style=" font-style: italic;">Very dark bluish green</td>
+</tr>
+<tr>
+<td class=" data">VIGB</td>
+<td class=" data">CX13478C</td>
+<td class=" data">H14E4FC3</td>
+<td class=" data" style=" background-color: #13478C;"></td>
+<td class=" data" style=" font-style: italic;">Vivid greenish blue</td>
+</tr>
+<tr>
+<td class=" data">VIBG</td>
+<td class=" data">CX138C89</td>
+<td class=" data">H12A4FC3</td>
+<td class=" data" style=" background-color: #138C89;"></td>
+<td class=" data" style=" font-style: italic;">Vivid bluish green</td>
+</tr>
+<tr>
+<td class=" data">DEGB</td>
+<td class=" data">CX142233</td>
+<td class=" data">H14E246D</td>
+<td class=" data" style=" background-color: #142233;"></td>
+<td class=" data" style=" font-style: italic;">Deep greenish blue</td>
+</tr>
+<tr>
+<td class=" data">DEG</td>
+<td class=" data">CX143322</td>
+<td class=" data">H10C246D</td>
+<td class=" data" style=" background-color: #143322;"></td>
+<td class=" data" style=" font-style: italic;">Deep green</td>
+</tr>
+<tr>
+<td class=" data">DEBG</td>
+<td class=" data">CX143332</td>
+<td class=" data">H12A246D</td>
+<td class=" data" style=" background-color: #143332;"></td>
+<td class=" data" style=" font-style: italic;">Deep bluish green</td>
+</tr>
+<tr>
+<td class=" data">DAPB</td>
+<td class=" data">CX151219</td>
+<td class=" data">H017162D</td>
+<td class=" data" style=" background-color: #151219;"></td>
+<td class=" data" style=" font-style: italic;">Dark purplish blue</td>
+</tr>
+<tr>
+<td class=" data">DEOLG</td>
+<td class=" data">CX15260D</td>
+<td class=" data">H0DD1980</td>
+<td class=" data" style=" background-color: #15260D;"></td>
+<td class=" data" style=" font-style: italic;">Deep olive green</td>
+</tr>
+<tr>
+<td class=" data">DAV</td>
+<td class=" data">CX161219</td>
+<td class=" data">H022162D</td>
+<td class=" data" style=" background-color: #161219;"></td>
+<td class=" data" style=" font-style: italic;">Dark violet</td>
+</tr>
+<tr>
+<td class=" data">DAOL</td>
+<td class=" data">CX161911</td>
+<td class=" data">H0CB1533</td>
+<td class=" data" style=" background-color: #161911;"></td>
+<td class=" data" style=" font-style: italic;">Dark olive</td>
+</tr>
+<tr>
+<td class=" data">VIYG</td>
+<td class=" data">CX16A629</td>
+<td class=" data">H0F85EC3</td>
+<td class=" data" style=" background-color: #16A629;"></td>
+<td class=" data" style=" font-style: italic;">Vivid yellowish green</td>
+</tr>
+<tr>
+<td class=" data">VDEP</td>
+<td class=" data">CX170819</td>
+<td class=" data">H034117F</td>
+<td class=" data" style=" background-color: #170819;"></td>
+<td class=" data" style=" font-style: italic;">Very deep purple</td>
+</tr>
+<tr>
+<td class=" data">BLB</td>
+<td class=" data">CX171719</td>
+<td class=" data">H001180D</td>
+<td class=" data" style=" background-color: #171719;"></td>
+<td class=" data" style=" font-style: italic;">Blackish blue</td>
+</tr>
+<tr>
+<td class=" data">BLG</td>
+<td class=" data">CX171918</td>
+<td class=" data">H10C180D</td>
+<td class=" data" style=" background-color: #171918;"></td>
+<td class=" data" style=" font-style: italic;">Blackish green</td>
+</tr>
+<tr>
+<td class=" data">VDAYG</td>
+<td class=" data">CX172118</td>
+<td class=" data">H0F81C2D</td>
+<td class=" data" style=" background-color: #172118;"></td>
+<td class=" data" style=" font-style: italic;">Very dark yellowish green</td>
+</tr>
+<tr>
+<td class=" data">DEPB</td>
+<td class=" data">CX180F26</td>
+<td class=" data">H0171B6D</td>
+<td class=" data" style=" background-color: #180F26;"></td>
+<td class=" data" style=" font-style: italic;">Deep purplish blue</td>
+</tr>
+<tr>
+<td class=" data">VDAP</td>
+<td class=" data">CX181219</td>
+<td class=" data">H034162D</td>
+<td class=" data" style=" background-color: #181219;"></td>
+<td class=" data" style=" font-style: italic;">Very dark purple</td>
+</tr>
+<tr>
+<td class=" data">DEYG</td>
+<td class=" data">CX185920</td>
+<td class=" data">H0F83994</td>
+<td class=" data" style=" background-color: #185920;"></td>
+<td class=" data" style=" font-style: italic;">Deep yellowish green</td>
+</tr>
+<tr>
+<td class=" data">VDERP</td>
+<td class=" data">CX190817</td>
+<td class=" data">H046117F</td>
+<td class=" data" style=" background-color: #190817;"></td>
+<td class=" data" style=" font-style: italic;">Very deep reddish purple</td>
+</tr>
+<tr>
+<td class=" data">VDER</td>
+<td class=" data">CX190A0D</td>
+<td class=" data">H06D126D</td>
+<td class=" data" style=" background-color: #190A0D;"></td>
+<td class=" data" style=" font-style: italic;">Very deep red</td>
+</tr>
+<tr>
+<td class=" data">VDEPR</td>
+<td class=" data">CX190A12</td>
+<td class=" data">H058126D</td>
+<td class=" data" style=" background-color: #190A12;"></td>
+<td class=" data" style=" font-style: italic;">Very deep purplish red</td>
+</tr>
+</tbody>
+</table>
+<p>&#160;</p>
+<table class="table" cellspacing="2" cellpadding="1" rules="groups" frame="box" border="1" summary="Procedure Report: Detailed and/or summarized report">
+<colgroup>
+<col></col>
+<col></col>
+<col></col>
+<col></col>
+<col></col>
+</colgroup>
+<thead>
+<tr>
+<th class=" header" width="125">Name</th>
+<th class=" header" width="100">RGB Value</th>
+<th class=" header" width="100">HLS Value</th>
+<th class=" header" width="100">Sample</th>
+<th class=" header" width="175">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class=" data">VDAR</td>
+<td class=" data">CX191213</td>
+<td class=" data">H06D162D</td>
+<td class=" data" style=" background-color: #191213;"></td>
+<td class=" data" style=" font-style: italic;">Very dark red</td>
+</tr>
+<tr>
+<td class=" data">VDAPR</td>
+<td class=" data">CX191216</td>
+<td class=" data">H058162D</td>
+<td class=" data" style=" background-color: #191216;"></td>
+<td class=" data" style=" font-style: italic;">Very dark purplish red</td>
+</tr>
+<tr>
+<td class=" data">VDARP</td>
+<td class=" data">CX191218</td>
+<td class=" data">H046162D</td>
+<td class=" data" style=" background-color: #191218;"></td>
+<td class=" data" style=" font-style: italic;">Very dark reddish purple</td>
+</tr>
+<tr>
+<td class=" data">DARBR</td>
+<td class=" data">CX191614</td>
+<td class=" data">H08C171C</td>
+<td class=" data" style=" background-color: #191614;"></td>
+<td class=" data" style=" font-style: italic;">Dark reddish brown</td>
+</tr>
+<tr>
+<td class=" data">DABR</td>
+<td class=" data">CX191714</td>
+<td class=" data">H098171C</td>
+<td class=" data" style=" background-color: #191714;"></td>
+<td class=" data" style=" font-style: italic;">Dark brown</td>
+</tr>
+<tr>
+<td class=" data">BLR</td>
+<td class=" data">CX191717</td>
+<td class=" data">H06D180D</td>
+<td class=" data" style=" background-color: #191717;"></td>
+<td class=" data" style=" font-style: italic;">Blackish red</td>
+</tr>
+<tr>
+<td class=" data">BLP</td>
+<td class=" data">CX191719</td>
+<td class=" data">H034180D</td>
+<td class=" data" style="background-color: #191719;"></td>
+<td class=" data" style=" font-style: italic;">Blackish purple</td>
+</tr>
+<tr>
+<td class=" data">RBK</td>
+<td class=" data">CX191919</td>
+<td class=" data">H06D1904</td>
+<td class=" data" style="  background-color: #191919;"></td>
+<td class=" data" style=" font-style: italic;">Reddish black</td>
+</tr>
+<tr>
+<td class=" data">MidnightBlue</td>
+<td class=" data">CX191970</td>
+<td class=" data">H00045A2</td>
+<td class=" data" style=" background-color: #191970;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">DEV</td>
+<td class=" data">CX1B0D26</td>
+<td class=" data">H0221980</td>
+<td class=" data" style=" background-color: #1B0D26;"></td>
+<td class=" data" style=" font-style: italic;">Deep violet</td>
+</tr>
+<tr>
+<td class=" data">DAB</td>
+<td class=" data">CX1B1B26</td>
+<td class=" data">H001212D</td>
+<td class=" data" style=" background-color: #1B1B26;"></td>
+<td class=" data" style=" font-style: italic;">Dark blue</td>
+</tr>
+<tr>
+<td class=" data">DodgerBlue</td>
+<td class=" data">CX1E90FF</td>
+<td class=" data">H1498FFF</td>
+<td class=" data" style=" background-color: #1E90FF;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">DAOLG</td>
+<td class=" data">CX1F261C</td>
+<td class=" data">H0DD2127</td>
+<td class=" data" style=" background-color: #1F261C;"></td>
+<td class=" data" style=" font-style: italic;">Dark olive green</td>
+</tr>
+<tr>
+<td class=" data">STB</td>
+<td class=" data">CX201F73</td>
+<td class=" data">H0014994</td>
+<td class=" data" style=" background-color: #201F73;"></td>
+<td class=" data" style=" font-style: italic;">Strong blue</td>
+</tr>
+<tr>
+<td class=" data">LightSeaGreen</td>
+<td class=" data">CX20B2AA</td>
+<td class=" data">H12969B2</td>
+<td class=" data" style=" background-color: #20B2AA;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">ForestGreen</td>
+<td class=" data">CX228B22</td>
+<td class=" data">H0EF579B</td>
+<td class=" data" style=" background-color: #228B22;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">DERBR</td>
+<td class=" data">CX26150D</td>
+<td class=" data">H08C1980</td>
+<td class=" data" style=" background-color: #26150D;"></td>
+<td class=" data" style=" font-style: italic;">Deep reddish brown</td>
+</tr>
+<tr>
+<td class=" data">DEBR</td>
+<td class=" data">CX261C0F</td>
+<td class=" data">H0981B6D</td>
+<td class=" data" style=" background-color: #261C0F;"></td>
+<td class=" data" style=" font-style: italic;">Deep brown</td>
+</tr>
+<tr>
+<td class=" data">DAYBR</td>
+<td class=" data">CX26251F</td>
+<td class=" data">H0AA221C</td>
+<td class=" data" style=" background-color: #26251F;"></td>
+<td class=" data" style=" font-style: italic;">Dark yellowish brown</td>
+</tr>
+<tr>
+<td class=" data">DAOLBR</td>
+<td class=" data">CX26261C</td>
+<td class=" data">H0B52127</td>
+<td class=" data" style=" background-color: #26261C;"></td>
+<td class=" data" style=" font-style: italic;">Dark olive brown</td>
+</tr>
+<tr>
+<td class=" data">STOLG</td>
+<td class=" data">CX264C14</td>
+<td class=" data">H0DD3094</td>
+<td class=" data" style=" background-color: #264C14;"></td>
+<td class=" data" style=" font-style: italic;">Strong olive green</td>
+</tr>
+<tr>
+<td class=" data">DAGB</td>
+<td class=" data">CX2A3440</td>
+<td class=" data">H14E3533</td>
+<td class=" data" style=" background-color: #2A3440;"></td>
+<td class=" data" style=" font-style: italic;">Dark greenish blue</td>
+</tr>
+<tr>
+<td class=" data">VIPB</td>
+<td class=" data">CX2B0766</td>
+<td class=" data">H01736DF</td>
+<td class=" data" style=" background-color: #2B0766;"></td>
+<td class=" data" style=" font-style: italic;">Vivid purplish blue</td>
+</tr>
+<tr>
+<td class=" data">DABG</td>
+<td class=" data">CX2D403F</td>
+<td class=" data">H12A362D</td>
+<td class=" data" style=" background-color: #2D403F;"></td>
+<td class=" data" style=" font-style: italic;">Dark bluish green</td>
+</tr>
+<tr>
+<td class=" data">DAGROLG</td>
+<td class=" data">CX2E332C</td>
+<td class=" data">H0DD3012</td>
+<td class=" data" style=" background-color: #2E332C;"></td>
+<td class=" data" style=" font-style: italic;">Dark grayish olive green</td>
+</tr>
+<tr>
+<td class=" data">STGB</td>
+<td class=" data">CX2E4C73</td>
+<td class=" data">H14E506D</td>
+<td class=" data" style=" background-color: #2E4C73;"></td>
+<td class=" data" style=" font-style: italic;">Strong greenish blue</td>
+</tr>
+<tr>
+<td class=" data">STG</td>
+<td class=" data">CX2E734E</td>
+<td class=" data">H10C506D</td>
+<td class=" data" style=" background-color: #2E734E;"></td>
+<td class=" data" style=" font-style: italic;">Strong green</td>
+</tr>
+<tr>
+<td class=" data">STBG</td>
+<td class=" data">CX2E7371</td>
+<td class=" data">H12A506D</td>
+<td class=" data" style=" background-color: #2E7371;"></td>
+<td class=" data" style=" font-style: italic;">Strong bluish green</td>
+</tr>
+<tr>
+<td class=" data">SeaGreen</td>
+<td class=" data">CX2E8B57</td>
+<td class=" data">H10A5D81</td>
+<td class=" data" style=" background-color: #2E8B57;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">DarkSlateGray</td>
+<td class=" data">CX2F4F4F</td>
+<td class=" data">H12C3F41</td>
+<td class=" data" style=" background-color: #2F4F4F;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">DAGROL</td>
+<td class=" data">CX30332C</td>
+<td class=" data">H0CB3012</td>
+<td class=" data" style=" background-color: #30332C;"></td>
+<td class=" data" style=" font-style: italic;">Dark grayish olive</td>
+</tr>
+<tr>
+<td class=" data">BIB</td>
+<td class=" data">CX3230B2</td>
+<td class=" data">H0017194</td>
+<td class=" data" style=" background-color: #3230B2;"></td>
+<td class=" data" style=" font-style: italic;">Brilliant blue</td>
+</tr>
+<tr>
+<td class=" data">LimeGreen</td>
+<td class=" data">CX32CD32</td>
+<td class=" data">H0EF809B</td>
+<td class=" data" style=" background-color: #32CD32;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">VIR</td>
+<td class=" data">CX33070F</td>
+<td class=" data">H06D1DC3</td>
+<td class=" data" style=" background-color: #33070F;"></td>
+<td class=" data" style=" font-style: italic;">Vivid red</td>
+</tr>
+<tr>
+<td class=" data">DEYBR</td>
+<td class=" data">CX332E14</td>
+<td class=" data">H0AA246D</td>
+<td class=" data" style=" background-color: #332E14;"></td>
+<td class=" data" style=" font-style: italic;">Deep yellowish brown</td>
+</tr>
+<tr>
+<td class=" data">DAGRRBR</td>
+<td class=" data">CX332E2C</td>
+<td class=" data">H08C3012</td>
+<td class=" data" style=" background-color: #332E2C;"></td>
+<td class=" data" style=" font-style: italic;">Dark grayish reddish brown</td>
+</tr>
+<tr>
+<td class=" data">DAGRBR</td>
+<td class=" data">CX33322E</td>
+<td class=" data">H0A5300D</td>
+<td class=" data" style=" background-color: #33322E;"></td>
+<td class=" data" style=" font-style: italic;">Dark grayish brown</td>
+</tr>
+<tr>
+<td class=" data">DAG</td>
+<td class=" data">CX364C40</td>
+<td class=" data">H10C412D</td>
+<td class=" data" style=" background-color: #364C40;"></td>
+<td class=" data" style=" font-style: italic;">Dark green</td>
+</tr>
+<tr>
+<td class=" data">DAGRB</td>
+<td class=" data">CX373740</td>
+<td class=" data">H0013B12</td>
+<td class=" data" style=" background-color: #373740;"></td>
+<td class=" data" style=" font-style: italic;">Dark grayish blue</td>
+</tr>
+<tr>
+<td class=" data">STYG</td>
+<td class=" data">CX388C43</td>
+<td class=" data">H0F8626D</td>
+<td class=" data" style=" color: #388C43; background-color: #388C43;">STYG</td>
+<td class=" data" style=" font-style: italic;">Strong yellowish green</td>
+</tr>
+<tr>
+<td class=" data">DAYG</td>
+<td class=" data">CX3B593F</td>
+<td class=" data">H0F84A33</td>
+<td class=" data" style=" background-color: #3B593F;"></td>
+<td class=" data" style=" font-style: italic;">Dark yellowish green</td>
+</tr>
+<tr>
+<td class=" data">STV</td>
+<td class=" data">CX3C1859</td>
+<td class=" data">H0223994</td>
+<td class=" data" style=" background-color: #3C1859;"></td>
+<td class=" data" style=" font-style: italic;">Strong violet</td>
+</tr>
+<tr>
+<td class=" data">DELG</td>
+<td class=" data">CX3C6629</td>
+<td class=" data">H0DD476D</td>
+<td class=" data" style=" background-color: #3C6629;"></td>
+<td class=" data" style=" font-style: italic;">Deep yellow green</td>
+</tr>
+<tr>
+<td class=" data">MediumSeaGreen</td>
+<td class=" data">CX3CB371</td>
+<td class=" data">H10A787F</td>
+<td class=" data" style=" background-color: #3CB371;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">DEP</td>
+<td class=" data">CX3E1745</td>
+<td class=" data">H0342E80</td>
+<td class=" data" style=" background-color: #3E1745;"></td>
+<td class=" data" style=" font-style: italic;">Deep purple</td>
+</tr>
+<tr>
+<td class=" data">MOB</td>
+<td class=" data">CX3E3D73</td>
+<td class=" data">H001584E</td>
+<td class=" data" style=" background-color: #3E3D73;"></td>
+<td class=" data" style=" font-style: italic;">Moderate blue</td>
+</tr>
+<tr>
+<td class=" data">STPB</td>
+<td class=" data">CX3F1F73</td>
+<td class=" data">H0174994</td>
+<td class=" data" style=" background-color: #3F1F73;"></td>
+<td class=" data" style=" font-style: italic;">Strong purplish blue</td>
+</tr>
+</tbody>
+</table>
+<p style="page-break-after: always;">&#160</p>
+<table class="table" cellspacing="2" cellpadding="1" rules="groups" frame="box" border="1" summary="Procedure Report: Detailed and/or summarized report">
+<colgroup>
+<col>&nbsp;</col>
+<col>&nbsp;</col>
+<col>&nbsp;</col>
+<col>&nbsp;</col>
+<col>&nbsp;</col>
+</colgroup>
+<thead>
+<tr>
+<th class=" header" width="125">Name</th>
+<th class=" header" width="100">RGB Value</th>
+<th class=" header" width="100">HLS Value</th>
+<th class=" header" width="100">Sample</th>
+<th class=" header" width="175">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class=" data">MOPB</td>
+<td class=" data">CX3F3059</td>
+<td class=" data">H017444E</td>
+<td class=" data" style=" background-color: #3F3059;"></td>
+<td class=" data" style=" font-style: italic;">Moderate purplish blue</td>
+</tr>
+<tr>
+<td class=" data">DAR</td>
+<td class=" data">CX40262B</td>
+<td class=" data">H06D3340</td>
+<td class=" data" style=" background-color: #40262B;"></td>
+<td class=" data" style=" font-style: italic;">Dark red</td>
+</tr>
+<tr>
+<td class=" data">DAGRYBR</td>
+<td class=" data">CX403E37</td>
+<td class=" data">H0AA3B12</td>
+<td class=" data" style=" background-color: #403E37;"></td>
+<td class=" data" style=" font-style: italic;">Dark grayish yellowish brown</td>
+</tr>
+<tr>
+<td class=" data">Turquoise</td>
+<td class=" data">CX40E0D0</td>
+<td class=" data">H12690B8</td>
+<td class=" data" style=" background-color: #40E0D0;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">RoyalBlue</td>
+<td class=" data">CX4169E1</td>
+<td class=" data">H15A91BA</td>
+<td class=" data" style=" background-color: #4169E1;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">DAP</td>
+<td class=" data">CX423045</td>
+<td class=" data">H0343B2D</td>
+<td class=" data" style=" background-color: #423045;"></td>
+<td class=" data" style=" font-style: italic;">Dark purple</td>
+</tr>
+<tr>
+<td class=" data">DAGRP</td>
+<td class=" data">CX443C45</td>
+<td class=" data">H0344012</td>
+<td class=" data" style=" background-color: #443C45;"></td>
+<td class=" data" style=" font-style: italic;">Dark grayish purple</td>
+</tr>
+<tr>
+<td class=" data">VILG</td>
+<td class=" data">CX44A616</td>
+<td class=" data">H0DD5EC3</td>
+<td class=" data" style=" background-color: #44A616;"></td>
+<td class=" data" style=" font-style: italic;">Vivid yellow green</td>
+</tr>
+<tr>
+<td class=" data">DEPR</td>
+<td class=" data">CX45122E</td>
+<td class=" data">H0582C94</td>
+<td class=" data" style=" background-color: #45122E;"></td>
+<td class=" data" style=" font-style: italic;">Deep purplish red</td>
+</tr>
+<tr>
+<td class=" data">DERP</td>
+<td class=" data">CX45173E</td>
+<td class=" data">H0462E80</td>
+<td class=" data" style=" background-color: #45173E;"></td>
+<td class=" data" style=" font-style: italic;">Deep reddish purple</td>
+</tr>
+<tr>
+<td class=" data">DAPR</td>
+<td class=" data">CX452938</td>
+<td class=" data">H0583740</td>
+<td class=" data" style=" background-color: #452938;"></td>
+<td class=" data" style=" font-style: italic;">Dark purplish red</td>
+</tr>
+<tr>
+<td class=" data">DARP</td>
+<td class=" data">CX453042</td>
+<td class=" data">H0463B2D</td>
+<td class=" data" style=" background-color: #453042;"></td>
+<td class=" data" style=" font-style: italic;">Dark reddish purple</td>
+</tr>
+<tr>
+<td class=" data">DAGRR</td>
+<td class=" data">CX453C3D</td>
+<td class=" data">H06D4012</td>
+<td class=" data" style=" background-color: #453C3D;"></td>
+<td class=" data" style=" font-style: italic;">Dark grayish red</td>
+</tr>
+<tr>
+<td class=" data">DAGRG</td>
+<td class=" data">CX454C48</td>
+<td class=" data">H10C490D</td>
+<td class=" data" style=" background-color: #454C48;"></td>
+<td class=" data" style=" font-style: italic;">Dark grayish green</td>
+</tr>
+<tr>
+<td class=" data">MOOLG</td>
+<td class=" data">CX45593B</td>
+<td class=" data">H0DD4A33</td>
+<td class=" data" style=" background-color: #45593B;"></td>
+<td class=" data" style=" font-style: italic;">Moderate olive green</td>
+</tr>
+<tr>
+<td class=" data">SteelBlue</td>
+<td class=" data">CX4682B4</td>
+<td class=" data">H1467D71</td>
+<td class=" data" style=" background-color: #4682B4;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">MOV</td>
+<td class=" data">CX473059</td>
+<td class=" data">H022444E</td>
+<td class=" data" style=" background-color: #473059;"></td>
+<td class=" data" style=" font-style: italic;">Moderate violet</td>
+</tr>
+<tr>
+<td class=" data">MOOL</td>
+<td class=" data">CX47592A</td>
+<td class=" data">H0CB415D</td>
+<td class=" data" style=" background-color: #47592A;"></td>
+<td class=" data" style=" font-style: italic;">Moderate olive</td>
+</tr>
+<tr>
+<td class=" data">DarkSlateBlue</td>
+<td class=" data">CX483D8B</td>
+<td class=" data">H0076464</td>
+<td class=" data" style=" background-color: #483D8B;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">MediumTurquoise</td>
+<td class=" data">CX48D1CC</td>
+<td class=" data">H12A8D99</td>
+<td class=" data" style=" background-color: #48D1CC;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">GRPB</td>
+<td class=" data">CX4A4159</td>
+<td class=" data">H0174D27</td>
+<td class=" data" style=" background-color: #4A4159;"></td>
+<td class=" data" style=" font-style: italic;">Grayish purplish blue</td>
+</tr>
+<tr>
+<td class=" data">Indigo</td>
+<td class=" data">CX4B0082</td>
+<td class=" data">H02341FF</td>
+<td class=" data" style=" background-color: #4B0082;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">VIPR</td>
+<td class=" data">CX4C052C</td>
+<td class=" data">H05829DF</td>
+<td class=" data" style=" background-color: #4C052C;"></td>
+<td class=" data" style=" font-style: italic;">Vivid purplish red</td>
+</tr>
+<tr>
+<td class=" data">DER</td>
+<td class=" data">CX4C1923</td>
+<td class=" data">H06D3380</td>
+<td class=" data" style=" background-color: #4C1923;"></td>
+<td class=" data" style=" font-style: italic;">Deep red</td>
+</tr>
+<tr>
+<td class=" data">STRBR</td>
+<td class=" data">CX4C2714</td>
+<td class=" data">H08C3094</td>
+<td class=" data" style=" background-color: #4C2714;"></td>
+<td class=" data" style=" font-style: italic;">Strong reddish brown</td>
+</tr>
+<tr>
+<td class=" data">MOGB</td>
+<td class=" data">CX4C5D73</td>
+<td class=" data">H14E6033</td>
+<td class=" data" style=" background-color: #4C5D73;"></td>
+<td class=" data" style=" font-style: italic;">Moderate greenish blue</td>
+</tr>
+<tr>
+<td class=" data">MOG</td>
+<td class=" data">CX4C735E</td>
+<td class=" data">H10C6033</td>
+<td class=" data" style=" background-color: #4C735E;"></td>
+<td class=" data" style=" font-style: italic;">Moderate green</td>
+</tr>
+<tr>
+<td class=" data">MOBG</td>
+<td class=" data">CX4C7372</td>
+<td class=" data">H12A6033</td>
+<td class=" data" style=" background-color: #4C7372;"></td>
+<td class=" data" style=" font-style: italic;">Moderate bluish green</td>
+</tr>
+<tr>
+<td class=" data">BIGB</td>
+<td class=" data">CX4D7EBF</td>
+<td class=" data">H14E8679</td>
+<td class=" data" style=" background-color: #4D7EBF;"></td>
+<td class=" data" style=" font-style: italic;">Brilliant greenish blue</td>
+</tr>
+<tr>
+<td class=" data">BIG</td>
+<td class=" data">CX4DBF81</td>
+<td class=" data">H10C8679</td>
+<td class=" data" style=" background-color: #4DBF81;"></td>
+<td class=" data" style=" font-style: italic;">Brilliant green</td>
+</tr>
+<tr>
+<td class=" data">BIBG</td>
+<td class=" data">CX4DBFBC</td>
+<td class=" data">H12A8679</td>
+<td class=" data" style=" background-color: #4DBFBC;"></td>
+<td class=" data" style=" font-style: italic;">Brilliant bluish green</td>
+</tr>
+<tr>
+<td class=" data">GRV</td>
+<td class=" data">CX4F4159</td>
+<td class=" data">H0224D27</td>
+<td class=" data" style=" background-color: #4F4159;"></td>
+<td class=" data" style=" font-style: italic;">Grayish violet</td>
+</tr>
+<tr>
+<td class=" data">BIYG</td>
+<td class=" data">CX52CC62</td>
+<td class=" data">H0F88F8B</td>
+<td class=" data" style=" background-color: #52CC62;"></td>
+<td class=" data" style=" font-style: italic;">Brilliant yellowish green</td>
+</tr>
+<tr>
+<td class=" data">VIV</td>
+<td class=" data">CX53098C</td>
+<td class=" data">H0224BDF</td>
+<td class=" data" style=" background-color: #53098C;"></td>
+<td class=" data" style=" font-style: italic;">Vivid violet</td>
+</tr>
+<tr>
+<td class=" data">DABGR</td>
+<td class=" data">CX535359</td>
+<td class=" data">H0015609</td>
+<td class=" data" style=" background-color: #535359;"></td>
+<td class=" data" style=" font-style: italic;">Dark bluish gray</td>
+</tr>
+<tr>
+<td class=" data">GROL</td>
+<td class=" data">CX54594A</td>
+<td class=" data">H0CB5217</td>
+<td class=" data" style=" background-color: #54594A;"></td>
+<td class=" data" style=" font-style: italic;">Grayish olive</td>
+</tr>
+<tr>
+<td class=" data">DarkOliveGreen</td>
+<td class=" data">CX556B2F</td>
+<td class=" data">H0C94D64</td>
+<td class=" data" style="  background-color: #556B2F;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">OLGR</td>
+<td class=" data">CX575953</td>
+<td class=" data">H0CB5609</td>
+<td class=" data" style=" background-color: #575953;"></td>
+<td class=" data" style=" font-style: italic;">Olive gray</td>
+</tr>
+<tr>
+<td class=" data">DAPGR</td>
+<td class=" data">CX585359</td>
+<td class=" data">H0345609</td>
+<td class=" data" style=" background-color: #585359;"></td>
+<td class=" data" style=" font-style: italic;">Dark purplish gray</td>
+</tr>
+<tr>
+<td class=" data">VIRP</td>
+<td class=" data">CX59064C</td>
+<td class=" data">H04630DF</td>
+<td class=" data" style=" background-color: #59064C;"></td>
+<td class=" data" style=" font-style: italic;">Vivid reddish purple</td>
+</tr>
+<tr>
+<td class=" data">STBR</td>
+<td class=" data">CX593B18</td>
+<td class=" data">H0983994</td>
+<td class=" data" style=" background-color: #593B18;"></td>
+<td class=" data" style=" font-style: italic;">Strong brown</td>
+</tr>
+<tr>
+<td class=" data">MORBR</td>
+<td class=" data">CX59453B</td>
+<td class=" data">H08C4A33</td>
+<td class=" data" style=" background-color: #59453B;"></td>
+<td class=" data" style=" font-style: italic;">Moderate reddish brown</td>
+</tr>
+<tr>
+<td class=" data">MOBR</td>
+<td class=" data">CX594E41</td>
+<td class=" data">H0984D27</td>
+<td class=" data" style=" background-color: #594E41;"></td>
+<td class=" data" style=" font-style: italic;">Moderate brown</td>
+</tr>
+<tr>
+<td class=" data">GRRBR</td>
+<td class=" data">CX594F4A</td>
+<td class=" data">H08C5217</td>
+<td class=" data" style=" background-color: #594F4A;"></td>
+<td class=" data" style=" font-style: italic;">Grayish reddish brown</td>
+</tr>
+<tr>
+<td class=" data">DARGR</td>
+<td class=" data">CX595354</td>
+<td class=" data">H06D5609</td>
+<td class=" data" style=" background-color: #595354;"></td>
+<td class=" data" style=" font-style: italic;">Dark reddish gray</td>
+</tr>
+<tr>
+<td class=" data">GRBR</td>
+<td class=" data">CX59564D</td>
+<td class=" data">H0A55312</td>
+<td class=" data" style=" background-color: #59564D;"></td>
+<td class=" data" style=" font-style: italic;">Grayish brown</td>
+</tr>
+<tr>
+<td class=" data">BRGR</td>
+<td class=" data">CX595753</td>
+<td class=" data">H0985609</td>
+<td class=" data" style=" background-color: #595753;"></td>
+<td class=" data" style=" font-style: italic;">Brownish gray</td>
+</tr>
+</tbody>
+</table>
+<p style="page-break-after: always;">&#160</p>
+<table class="table" cellspacing="2" cellpadding="1" rules="groups" frame="box" border="1" summary="Procedure Report: Detailed and/or summarized report">
+<colgroup>
+<col></col>
+<col></col>
+<col></col>
+<col></col>
+<col></col>
+</colgroup>
+<thead>
+<tr>
+<th class=" header" width="125">Name</th>
+<th class=" header" width="100">RGB Value</th>
+<th class=" header" width="100">HLS Value</th>
+<th class=" header" width="100">Sample</th>
+<th class=" header" width="175">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class=" data">MOOLBR</td>
+<td class=" data">CX595936</td>
+<td class=" data">H0B54740</td>
+<td class=" data" style=" background-color: #595936;"></td>
+<td class=" data" style=" font-style: italic;">Moderate olive brown</td>
+</tr>
+<tr>
+<td class=" data">DAGGR</td>
+<td class=" data">CX595959</td>
+<td class=" data">H0F85900</td>
+<td class=" data" style=" background-color: #595959;"></td>
+<td class=" data" style=" font-style: italic;">Dark greenish gray</td>
+</tr>
+<tr>
+<td class=" data">LIB</td>
+<td class=" data">CX5A58A6</td>
+<td class=" data">H0017F4E</td>
+<td class=" data" style=" background-color: #5A58A6;"></td>
+<td class=" data" style=" font-style: italic;">Light blue</td>
+</tr>
+<tr>
+<td class=" data">STLG</td>
+<td class=" data">CX5B993D</td>
+<td class=" data">H0DD6B6D</td>
+<td class=" data" style=" background-color: #5B993D;"></td>
+<td class=" data" style=" font-style: italic;">Strong yellow green</td>
+</tr>
+<tr>
+<td class=" data">GRB</td>
+<td class=" data">CX5C5C73</td>
+<td class=" data">H001671C</td>
+<td class=" data" style=" background-color: #5C5C73;"></td>
+<td class=" data" style=" font-style: italic;">Grayish blue</td>
+</tr>
+<tr>
+<td class=" data">MOYG</td>
+<td class=" data">CX5D8C64</td>
+<td class=" data">H0F87533</td>
+<td class=" data" style=" background-color: #5D8C64;"></td>
+<td class=" data" style=" font-style: italic;">Moderate yellowish green</td>
+</tr>
+<tr>
+<td class=" data">CadetBlue</td>
+<td class=" data">CX5F9EA0</td>
+<td class=" data">H12D8041</td>
+<td class=" data" style=" background-color: #5F9EA0;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">BIPB</td>
+<td class=" data">CX6130B2</td>
+<td class=" data">H0177194</td>
+<td class=" data" style=" background-color: #6130B2;"></td>
+<td class=" data" style=" font-style: italic;">Brilliant purplish blue</td>
+</tr>
+<tr>
+<td class=" data">LIOL</td>
+<td class=" data">CX628033</td>
+<td class=" data">H0CB596D</td>
+<td class=" data" style=" background-color: #628033;"></td>
+<td class=" data" style=" font-style: italic;">Light olive</td>
+</tr>
+<tr>
+<td class=" data">GRG</td>
+<td class=" data">CX63736A</td>
+<td class=" data">H10C6B12</td>
+<td class=" data" style=" background-color: #63736A;"></td>
+<td class=" data" style=" font-style: italic;">Grayish green</td>
+</tr>
+<tr>
+<td class=" data">CornFlowerBlue</td>
+<td class=" data">CX6495ED</td>
+<td class=" data">H153A9CA</td>
+<td class=" data" style=" background-color: #6495ED;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">DERO</td>
+<td class=" data">CX662F14</td>
+<td class=" data">H08C3DAA</td>
+<td class=" data" style=" background-color: #662F14;"></td>
+<td class=" data" style=" font-style: italic;">Deep reddish orange</td>
+</tr>
+<tr>
+<td class=" data">DARO</td>
+<td class=" data">CX663D29</td>
+<td class=" data">H08C476D</td>
+<td class=" data" style=" background-color: #663D29;"></td>
+<td class=" data" style=" font-style: italic;">Dark reddish orange</td>
+</tr>
+<tr>
+<td class=" data">MediumAquamarine</td>
+<td class=" data">CX66CDAA</td>
+<td class=" data">H1189A82</td>
+<td class=" data" style=" background-color: #66CDAA;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">STP</td>
+<td class=" data">CX671F73</td>
+<td class=" data">H0344994</td>
+<td class=" data" style=" background-color: #671F73;"></td>
+<td class=" data" style=" font-style: italic;">Strong purple</td>
+</tr>
+<tr>
+<td class=" data">DimGray</td>
+<td class=" data">CX696969</td>
+<td class=" data">H0006900</td>
+<td class=" data" style="  background-color: #696969;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">SlateBlue</td>
+<td class=" data">CX6A5ACD</td>
+<td class=" data">H0079489</td>
+<td class=" data" style=" background-color: #6A5ACD;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">MOP</td>
+<td class=" data">CX6B3D73</td>
+<td class=" data">H034584E</td>
+<td class=" data" style=" background-color: #6B3D73;"></td>
+<td class=" data" style=" font-style: italic;">Moderate purple</td>
+</tr>
+<tr>
+<td class=" data">OliveDrab</td>
+<td class=" data">CX6B8E23</td>
+<td class=" data">H0C6599B</td>
+<td class=" data" style=" background-color: #6B8E23;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">LIPB</td>
+<td class=" data">CX6D5299</td>
+<td class=" data">H017754E</td>
+<td class=" data" style=" background-color: #6D5299;"></td>
+<td class=" data" style=" font-style: italic;">Light purplish blue</td>
+</tr>
+<tr>
+<td class=" data">LIGB</td>
+<td class=" data">CX6E86A6</td>
+<td class=" data">H14E8A3C</td>
+<td class=" data" style=" background-color: #6E86A6;"></td>
+<td class=" data" style=" font-style: italic;">Light greenish blue</td>
+</tr>
+<tr>
+<td class=" data">LIG</td>
+<td class=" data">CX6EA688</td>
+<td class=" data">H10C8A3C</td>
+<td class=" data" style="  background-color: #6EA688;"></td>
+<td class=" data" style=" font-style: italic;">Light green</td>
+</tr>
+<tr>
+<td class=" data">LIBG</td>
+<td class=" data">CX6EA6A4</td>
+<td class=" data">H12A8A3C</td>
+<td class=" data" style=" background-color: #6EA6A4;"></td>
+<td class=" data" style=" font-style: italic;">Light bluish green</td>
+</tr>
+<tr>
+<td class=" data">VIP</td>
+<td class=" data">CX6F0980</td>
+<td class=" data">H03444DF</td>
+<td class=" data" style=" background-color: #6F0980;"></td>
+<td class=" data" style=" font-style: italic;">Vivid purple</td>
+</tr>
+<tr>
+<td class=" data">MAROON</td>
+<td class=" data">CX700000</td>
+<td class=" data">H07838FF</td>
+<td class=" data" style=" background-color: #700000;"></td>
+<td class=" data" style=" font-style: italic;">Maroon</td>
+</tr>
+<tr>
+<td class=" data">PURPLE</td>
+<td class=" data">CX703070</td>
+<td class=" data">H03C5066</td>
+<td class=" data" style=" background-color: #703070;"></td>
+<td class=" data" style=" font-style: italic;">Purple</td>
+</tr>
+<tr>
+<td class=" data">GRP</td>
+<td class=" data">CX705C73</td>
+<td class=" data">H034671C</td>
+<td class=" data" style=" background-color: #705C73;"></td>
+<td class=" data" style=" font-style: italic;">Grayish purple</td>
+</tr>
+<tr>
+<td class=" data">SlateGray</td>
+<td class=" data">CX708090</td>
+<td class=" data">H14A8021</td>
+<td class=" data" style="background-color: #708090;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">STR</td>
+<td class=" data">CX731727</td>
+<td class=" data">H06D45AA</td>
+<td class=" data" style=" background-color: #731727;"></td>
+<td class=" data" style=" font-style: italic;">Strong red</td>
+</tr>
+<tr>
+<td class=" data">STPR</td>
+<td class=" data">CX731749</td>
+<td class=" data">H05845AA</td>
+<td class=" data" style=" background-color: #731749;"></td>
+<td class=" data" style=" font-style: italic;">Strong purplish red</td>
+</tr>
+<tr>
+<td class=" data">STRP</td>
+<td class=" data">CX731F65</td>
+<td class=" data">H0464994</td>
+<td class=" data" style=" background-color: #731F65;"></td>
+<td class=" data" style=" font-style: italic;">Strong reddish purple</td>
+</tr>
+<tr>
+<td class=" data">MOR</td>
+<td class=" data">CX732E3A</td>
+<td class=" data">H06D506D</td>
+<td class=" data" style=" background-color: #732E3A;"></td>
+<td class=" data" style=" font-style: italic;">Moderate red</td>
+</tr>
+<tr>
+<td class=" data">MOPR</td>
+<td class=" data">CX732E53</td>
+<td class=" data">H058506D</td>
+<td class=" data" style=" background-color: #732E53;"></td>
+<td class=" data" style=" font-style: italic;">Moderate purplish red</td>
+</tr>
+<tr>
+<td class=" data">MORP</td>
+<td class=" data">CX733D6A</td>
+<td class=" data">H046584E</td>
+<td class=" data" style=" background-color: #733D6A;"></td>
+<td class=" data" style=" font-style: italic;">Moderate reddish purple</td>
+</tr>
+<tr>
+<td class=" data">GRPR</td>
+<td class=" data">CX734C61</td>
+<td class=" data">H0586033</td>
+<td class=" data" style=" background-color: #734C61;"></td>
+<td class=" data" style=" font-style: italic;">Grayish purplish red</td>
+</tr>
+<tr>
+<td class=" data">GRR</td>
+<td class=" data">CX73545A</td>
+<td class=" data">H06D6327</td>
+<td class=" data" style=" background-color: #73545A;"></td>
+<td class=" data" style=" font-style: italic;">Grayish red</td>
+</tr>
+<tr>
+<td class=" data">GRRP</td>
+<td class=" data">CX73546E</td>
+<td class=" data">H0466327</td>
+<td class=" data" style=" background-color: #73546E;"></td>
+<td class=" data" style=" font-style: italic;">Grayish reddish purple</td>
+</tr>
+<tr>
+<td class=" data">MOYBR</td>
+<td class=" data">CX736E58</td>
+<td class=" data">H0AA6522</td>
+<td class=" data" style=" background-color: #736E58;"></td>
+<td class=" data" style=" font-style: italic;">Moderate yellowish brown</td>
+</tr>
+<tr>
+<td class=" data">GRYBR</td>
+<td class=" data">CX737060</td>
+<td class=" data">H0AA6917</td>
+<td class=" data" style=" background-color: #737060;"></td>
+<td class=" data" style=" font-style: italic;">Grayish yellowish brown</td>
+</tr>
+<tr>
+<td class=" data">DEGY</td>
+<td class=" data">CX749938</td>
+<td class=" data">H0CB6976</td>
+<td class=" data" style=" background-color: #749938;"></td>
+<td class=" data" style=" font-style: italic;">Deep greenish yellow</td>
+</tr>
+<tr>
+<td class=" data">VLIB</td>
+<td class=" data">CX7674D9</td>
+<td class=" data">H001A691</td>
+<td class=" data" style=" background-color: #7674D9;"></td>
+<td class=" data" style=" font-style: italic;">Very light blue</td>
+</tr>
+<tr>
+<td class=" data">MOLG</td>
+<td class=" data">CX769966</td>
+<td class=" data">H0DD7F33</td>
+<td class=" data" style=" background-color: #769966;"></td>
+<td class=" data" style=" font-style: italic;">Moderate yellow green</td>
+</tr>
+<tr>
+<td class=" data">LightSlateGray</td>
+<td class=" data">CX778899</td>
+<td class=" data">H14A8825</td>
+<td class=" data" style=" background-color: #778899;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">BIV</td>
+<td class=" data">CX7930B2</td>
+<td class=" data">H0227194</td>
+<td class=" data" style=" background-color: #7930B2;"></td>
+<td class=" data" style=" font-style: italic;">Brilliant violet</td>
+</tr>
+<tr>
+<td class=" data">LIV</td>
+<td class=" data">CX7A5299</td>
+<td class=" data">H022754E</td>
+<td class=" data" style=" background-color: #7A5299;"></td>
+<td class=" data" style=" font-style: italic;">Light violet</td>
+</tr>
+<tr>
+<td class=" data">MediumSlateBlue</td>
+<td class=" data">CX7B68EE</td>
+<td class=" data">H007ABCC</td>
+<td class=" data" style=" background-color: #7B68EE;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">LawnGreen</td>
+<td class=" data">CX7CFC00</td>
+<td class=" data">H0D27EFF</td>
+<td class=" data" style=" background-color: #7CFC00;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p style="page-break-after: always;">&#160</p>
+<table class="table" cellspacing="2" cellpadding="1" rules="groups" frame="box" border="1" summary="Procedure Report: Detailed and/or summarized report">
+<colgroup>
+<col></col>
+<col></col>
+<col></col>
+<col></col>
+<col></col>
+</colgroup>
+<thead>
+<tr>
+<th class=" header" width="125">Name</th>
+<th class=" header" width="100">RGB Value</th>
+<th class=" header" width="100">HLS Value</th>
+<th class=" header" width="100">Sample</th>
+<th class=" header" width="175">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class=" data">DAGY</td>
+<td class=" data">CX7E9952</td>
+<td class=" data">H0CB754E</td>
+<td class=" data" style="background-color: #7E9952;"></td>
+<td class=" data" style=" font-style: italic;">Dark greenish yellow</td>
+</tr>
+<tr>
+<td class=" data">Aquamarine</td>
+<td class=" data">CX7FFDD4</td>
+<td class=" data">H119BEF8</td>
+<td class=" data" style="background-color: #7FFDD4;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">Chartreuse</td>
+<td class=" data">CX7FFF00</td>
+<td class=" data">H0D280FF</td>
+<td class=" data" style=" background-color: #7FFF00;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">Maroon</td>
+<td class=" data">CX800000</td>
+<td class=" data">H07840FF</td>
+<td class=" data" style=" background-color: #800000;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">Purple</td>
+<td class=" data">CX800080</td>
+<td class=" data">H03B40FF</td>
+<td class=" data" style=" background-color: #800080;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">VIRO</td>
+<td class=" data">CX803009</td>
+<td class=" data">H08C44DF</td>
+<td class=" data" style="  background-color: #803009;"></td>
+<td class=" data" style=" font-style: italic;">Vivid reddish orange</td>
+</tr>
+<tr>
+<td class=" data">DEO</td>
+<td class=" data">CX80511A</td>
+<td class=" data">H0984DAA</td>
+<td class=" data" style="background-color: #80511A;"></td>
+<td class=" data" style=" font-style: italic;">Deep orange</td>
+</tr>
+<tr>
+<td class=" data">BRO</td>
+<td class=" data">CX80603C</td>
+<td class=" data">H0985E5D</td>
+<td class=" data" style="background-color: #80603C;"></td>
+<td class=" data" style=" font-style: italic;">Brownish orange</td>
+</tr>
+<tr>
+<td class=" data">STYBR</td>
+<td class=" data">CX806A2B</td>
+<td class=" data">H0A5557F</td>
+<td class=" data" style="background-color: #806A2B;"></td>
+<td class=" data" style=" font-style: italic;">Strong yellowish brown</td>
+</tr>
+<tr>
+<td class=" data">Olive</td>
+<td class=" data">CX808000</td>
+<td class=" data">H0B440FF</td>
+<td class=" data" style="background-color: #808000;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">GRAY</td>
+<td class=" data">CX808080</td>
+<td class=" data">H0008000</td>
+<td class=" data" style=" background-color: #808080;"></td>
+<td class=" data" style=" font-style: italic;">Gray</td>
+</tr>
+<tr>
+<td class=" data">VIGY</td>
+<td class=" data">CX80BF1A</td>
+<td class=" data">H0CB6CC3</td>
+<td class=" data" style=" background-color: #80BF1A;"></td>
+<td class=" data" style=" font-style: italic;">Vivid greenish yellow</td>
+</tr>
+<tr>
+<td class=" data">LIYG</td>
+<td class=" data">CX80BF88</td>
+<td class=" data">H0F89F55</td>
+<td class=" data" style=" background-color: #80BF88;"></td>
+<td class=" data" style=" font-style: italic;">Light yellowish green</td>
+</tr>
+<tr>
+<td class=" data">BGR</td>
+<td class=" data">CX83838C</td>
+<td class=" data">H001880A</td>
+<td class=" data" style="  background-color: #83838C;"></td>
+<td class=" data" style=" font-style: italic;">Bluish gray</td>
+</tr>
+<tr>
+<td class=" data">LIGROL</td>
+<td class=" data">CX838C75</td>
+<td class=" data">H0CB8118</td>
+<td class=" data" style=" background-color: #838C75;"></td>
+<td class=" data" style=" font-style: italic;">Light grayish olive</td>
+</tr>
+<tr>
+<td class=" data">DEY</td>
+<td class=" data">CX839938</td>
+<td class=" data">H0C26976</td>
+<td class=" data" style=" background-color: #839938;"></td>
+<td class=" data" style=" font-style: italic;">Deep yellow</td>
+</tr>
+<tr>
+<td class=" data">PAB</td>
+<td class=" data">CX8585A6</td>
+<td class=" data">H0019528</td>
+<td class=" data" style=" background-color: #8585A6;"></td>
+<td class=" data" style=" font-style: italic;">Pale blue</td>
+</tr>
+<tr>
+<td class=" data">PAV</td>
+<td class=" data">CX877099</td>
+<td class=" data">H022852A</td>
+<td class=" data" style=" background-color: #877099;"></td>
+<td class=" data" style=" font-style: italic;">Pale violet</td>
+</tr>
+<tr>
+<td class=" data">LIOLGR</td>
+<td class=" data">CX878C7E</td>
+<td class=" data">H0CB850F</td>
+<td class=" data" style="  background-color: #878C7E;"></td>
+<td class=" data" style=" font-style: italic;">Light olive gray</td>
+</tr>
+<tr>
+<td class=" data">SkyBlue</td>
+<td class=" data">CX87CEEB</td>
+<td class=" data">H13CB9B7</td>
+<td class=" data" style="  background-color: #87CEEB;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">LightSkyBlue</td>
+<td class=" data">CX87CEFA</td>
+<td class=" data">H142C1EB</td>
+<td class=" data" style=" background-color: #87CEFA;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">BILG</td>
+<td class=" data">CX88E55C</td>
+<td class=" data">H0DDA1BA</td>
+<td class=" data" style=" background-color: #88E55C;"></td>
+<td class=" data" style=" font-style: italic;">Brilliant yellow green</td>
+</tr>
+<tr>
+<td class=" data">DAY</td>
+<td class=" data">CX899952</td>
+<td class=" data">H0C2754E</td>
+<td class=" data" style=" background-color: #899952;"></td>
+<td class=" data" style=" font-style: italic;">Dark yellow</td>
+</tr>
+<tr>
+<td class=" data">BlueViolet</td>
+<td class=" data">CX8A2BE2</td>
+<td class=" data">H01F87C2</td>
+<td class=" data" style="  background-color: #8A2BE2;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">PAPB</td>
+<td class=" data">CX8A7AA6</td>
+<td class=" data">H0179033</td>
+<td class=" data" style=" background-color: #8A7AA6;"></td>
+<td class=" data" style=" font-style: italic;">Pale purplish blue</td>
+</tr>
+<tr>
+<td class=" data">DarkRed</td>
+<td class=" data">CX8B0000</td>
+<td class=" data">H07846FF</td>
+<td class=" data" style=" background-color: #8B0000;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">DarkMagenta</td>
+<td class=" data">CX8B008B</td>
+<td class=" data">H03B46FF</td>
+<td class=" data" style=" background-color: #8B008B;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">SaddleBrown</td>
+<td class=" data">CX8B4513</td>
+<td class=" data">H0904FC2</td>
+<td class=" data" style="background-color: #8B4513;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">PGR</td>
+<td class=" data">CX8B838C</td>
+<td class=" data">H034880A</td>
+<td class=" data" style=" background-color: #8B838C;"></td>
+<td class=" data" style=" font-style: italic;">Purplish gray</td>
+</tr>
+<tr>
+<td class=" data">LIOLBR</td>
+<td class=" data">CX8B8C4B</td>
+<td class=" data">H0B56C4E</td>
+<td class=" data" style="  background-color: #8B8C4B;"></td>
+<td class=" data" style=" font-style: italic;">Light olive brown</td>
+</tr>
+<tr>
+<td class=" data">GRLG</td>
+<td class=" data">CX8B9985</td>
+<td class=" data">H0DD8F17</td>
+<td class=" data" style="  background-color: #8B9985;"></td>
+<td class=" data" style=" font-style: italic;">Grayish yellow green</td>
+</tr>
+<tr>
+<td class=" data">STRO</td>
+<td class=" data">CX8C411C</td>
+<td class=" data">H08C54AA</td>
+<td class=" data" style="  background-color: #8C411C;"></td>
+<td class=" data" style=" font-style: italic;">Strong reddish orange</td>
+</tr>
+<tr>
+<td class=" data">MORO</td>
+<td class=" data">CX8C5438</td>
+<td class=" data">H08C626D</td>
+<td class=" data" style="  background-color: #8C5438;"></td>
+<td class=" data" style=" font-style: italic;">Moderate reddish orange</td>
+</tr>
+<tr>
+<td class=" data">GRRO</td>
+<td class=" data">CX8C6754</td>
+<td class=" data">H08C7040</td>
+<td class=" data" style=" background-color: #8C6754;"></td>
+<td class=" data" style=" font-style: italic;">Grayish reddish orange</td>
+</tr>
+<tr>
+<td class=" data">LIRBR</td>
+<td class=" data">CX8C7367</td>
+<td class=" data">H08C7A27</td>
+<td class=" data" style=" background-color: #8C7367;"></td>
+<td class=" data" style=" font-style: italic;">Light reddish brown</td>
+</tr>
+<tr>
+<td class=" data">LIBR</td>
+<td class=" data">CX8C7962</td>
+<td class=" data">H098772D</td>
+<td class=" data" style="  background-color: #8C7962;"></td>
+<td class=" data" style=" font-style: italic;">Light brown</td>
+</tr>
+<tr>
+<td class=" data">LIGRRBR</td>
+<td class=" data">CX8C7D75</td>
+<td class=" data">H08C8118</td>
+<td class=" data" style=" background-color: #8C7D75;"></td>
+<td class=" data" style=" font-style: italic;">Light grayish reddish brown</td>
+</tr>
+<tr>
+<td class=" data">RGR</td>
+<td class=" data">CX8C8385</td>
+<td class=" data">H06D880A</td>
+<td class=" data" style=" background-color: #8C8385;"></td>
+<td class=" data" style=" font-style: italic;">Reddish gray</td>
+</tr>
+<tr>
+<td class=" data">LIGRBR</td>
+<td class=" data">CX8C887A</td>
+<td class=" data">H0A58313</td>
+<td class=" data" style=" background-color: #8C887A;"></td>
+<td class=" data" style=" font-style: italic;">Light grayish brown</td>
+</tr>
+<tr>
+<td class=" data">LIBRGR</td>
+<td class=" data">CX8C8883</td>
+<td class=" data">H098880A</td>
+<td class=" data" style=" background-color: #8C8883;"></td>
+<td class=" data" style=" font-style: italic;">Light brownish gray</td>
+</tr>
+<tr>
+<td class=" data">GGR</td>
+<td class=" data">CX8C8C8C</td>
+<td class=" data">H0F88C01</td>
+<td class=" data" style=" background-color: #8C8C8C;"></td>
+<td class=" data" style=" font-style: italic;">Greenish gray</td>
+</tr>
+<tr>
+<td class=" data">STGY</td>
+<td class=" data">CX8DBA44</td>
+<td class=" data">H0CB7F76</td>
+<td class=" data" style="background-color: #8DBA44;"></td>
+<td class=" data" style=" font-style: italic;">Strong greenish yellow</td>
+</tr>
+<tr>
+<td class=" data">DAGRY</td>
+<td class=" data">CX8E996B</td>
+<td class=" data">H0C2822F</td>
+<td class=" data" style=" background-color: #8E996B;"></td>
+<td class=" data" style=" font-style: italic;">Dark grayish yellow</td>
+</tr>
+<tr>
+<td class=" data">DarkSeaGreen</td>
+<td class=" data">CX8FBC8F</td>
+<td class=" data">H0EFA641</td>
+<td class=" data" style="background-color: #8FBC8F;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">PAG</td>
+<td class=" data">CX90A69A</td>
+<td class=" data">H10C9B1C</td>
+<td class=" data" style=" background-color: #90A69A;"></td>
+<td class=" data" style=" font-style: italic;">Pale green</td>
+</tr>
+<tr>
+<td class=" data">VLIGB</td>
+<td class=" data">CX90B0D9</td>
+<td class=" data">H14EB57C</td>
+<td class=" data" style=" background-color: #90B0D9;"></td>
+<td class=" data" style=" font-style: italic;">Very light greenish blue</td>
+</tr>
+<tr>
+<td class=" data">VLIBG</td>
+<td class=" data">CX90D9D7</td>
+<td class=" data">H12AB57C</td>
+<td class=" data" style="background-color: #90D9D7;"></td>
+<td class=" data" style=" font-style: italic;">Very light bluish green</td>
+</tr>
+</tbody>
+</table>
+
+<p style="page-break-after: always;">&#160</p>
+<table class="table" cellspacing="2" cellpadding="1" rules="groups" frame="box" border="1" summary="Procedure Report: Detailed and/or summarized report">
+<colgroup>
+<col></col>
+<col></col>
+<col></col>
+<col></col>
+<col></col>
+</colgroup>
+<thead>
+<tr>
+<th class=" header" width="125">Name</th>
+<th class=" header" width="100">RGB Value</th>
+<th class=" header" width="100">HLS Value</th>
+<th class=" header" width="100">Sample</th>
+<th class=" header" width="175">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class=" data">LightGreen</td>
+<td class=" data">CX90EE90</td>
+<td class=" data">H0EFBFBC</td>
+<td class=" data" style="  background-color: #90EE90;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">MediumPurple</td>
+<td class=" data">CX9370DB</td>
+<td class=" data">H012A699</td>
+<td class=" data" style="  background-color: #9370DB;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">DarkViolet</td>
+<td class=" data">CX9400D3</td>
+<td class=" data">H02B6AFF</td>
+<td class=" data" style="background-color: #9400D3;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">PaleGreen</td>
+<td class=" data">CX98FB98</td>
+<td class=" data">H0EFCAEC</td>
+<td class=" data" style="background-color: #98FB98;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">DEPPK</td>
+<td class=" data">CX991F85</td>
+<td class=" data">H0465CAA</td>
+<td class=" data" style="  background-color: #991F85;"></td>
+<td class=" data" style=" font-style: italic;">Deep purplish pink</td>
+</tr>
+<tr>
+<td class=" data">DEPK</td>
+<td class=" data">CX99293D</td>
+<td class=" data">H06D6194</td>
+<td class=" data" style="background-color: #99293D;"></td>
+<td class=" data" style=" font-style: italic;">Deep pink</td>
+</tr>
+<tr>
+<td class=" data">DarkOrchid</td>
+<td class=" data">CX9932CC</td>
+<td class=" data">H0297F9B</td>
+<td class=" data" style=" background-color: #9932CC;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">DEYPK</td>
+<td class=" data">CX993329</td>
+<td class=" data">H07D6194</td>
+<td class=" data" style=" background-color: #993329;"></td>
+<td class=" data" style=" font-style: italic;">Deep yellowish pink</td>
+</tr>
+<tr>
+<td class=" data">DAPPK</td>
+<td class=" data">CX995278</td>
+<td class=" data">H058754E</td>
+<td class=" data" style="background-color: #995278;"></td>
+<td class=" data" style=" font-style: italic;">Dark purplish pink</td>
+</tr>
+<tr>
+<td class=" data">LIRP</td>
+<td class=" data">CX99528E</td>
+<td class=" data">H046754E</td>
+<td class=" data" style=" background-color: #99528E;"></td>
+<td class=" data" style=" font-style: italic;">Light reddish purple</td>
+</tr>
+<tr>
+<td class=" data">DAPK</td>
+<td class=" data">CX995C67</td>
+<td class=" data">H06D7A40</td>
+<td class=" data" style=" background-color: #995C67;"></td>
+<td class=" data" style=" font-style: italic;">Dark pink</td>
+</tr>
+<tr>
+<td class=" data">DAYPK</td>
+<td class=" data">CX99615C</td>
+<td class=" data">H07D7A40</td>
+<td class=" data" style="background-color: #99615C;"></td>
+<td class=" data" style=" font-style: italic;">Dark yellowish pink</td>
+</tr>
+<tr>
+<td class=" data">LIGRR</td>
+<td class=" data">CX997078</td>
+<td class=" data">H06D852A</td>
+<td class=" data" style="background-color: #997078;"></td>
+<td class=" data" style=" font-style: italic;">Light grayish red</td>
+</tr>
+<tr>
+<td class=" data">LIGRPR</td>
+<td class=" data">CX997086</td>
+<td class=" data">H058852A</td>
+<td class=" data" style="background-color: #997086;"></td>
+<td class=" data" style=" font-style: italic;">Light purplish red</td>
+</tr>
+<tr>
+<td class=" data">PARP</td>
+<td class=" data">CX997092</td>
+<td class=" data">H046852A</td>
+<td class=" data" style=" background-color: #997092;"></td>
+<td class=" data" style=" font-style: italic;">Pale reddish purple</td>
+</tr>
+<tr>
+<td class=" data">DEOY</td>
+<td class=" data">CX997A1F</td>
+<td class=" data">H0A55CAA</td>
+<td class=" data" style=" background-color: #997A1F;"></td>
+<td class=" data" style=" font-style: italic;">Deep orange yellow</td>
+</tr>
+<tr>
+<td class=" data">DAOY</td>
+<td class=" data">CX998547</td>
+<td class=" data">H0A5705D</td>
+<td class=" data" style=" background-color: #998547;"></td>
+<td class=" data" style=" font-style: italic;">Dark orange yellow</td>
+</tr>
+<tr>
+<td class=" data">VIY</td>
+<td class=" data">CX99BF1A</td>
+<td class=" data">H0C26CC3</td>
+<td class=" data" style="  background-color: #99BF1A;"></td>
+<td class=" data" style=" font-style: italic;">Vivid yellow</td>
+</tr>
+<tr>
+<td class=" data">VLIG</td>
+<td class=" data">CX99E5BC</td>
+<td class=" data">H10CBF99</td>
+<td class=" data" style="background-color: #99E5BC;"></td>
+<td class=" data" style=" font-style: italic;">Very light green</td>
+</tr>
+<tr>
+<td class=" data">YellowGreen</td>
+<td class=" data">CX9ACD32</td>
+<td class=" data">H0C6809B</td>
+<td class=" data" style="  background-color: #9ACD32;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">LIP</td>
+<td class=" data">CX9B58A6</td>
+<td class=" data">H0347F4E</td>
+<td class=" data" style=" background-color: #9B58A6;"></td>
+<td class=" data" style=" font-style: italic;">Light purple</td>
+</tr>
+<tr>
+<td class=" data">MOGY</td>
+<td class=" data">CX9DBF66</td>
+<td class=" data">H0CB9369</td>
+<td class=" data" style="  background-color: #9DBF66;"></td>
+<td class=" data" style=" font-style: italic;">Moderate greenish yellow</td>
+</tr>
+<tr>
+<td class=" data">VLIYG</td>
+<td class=" data">CX9EEDA8</td>
+<td class=" data">H0F8C6B0</td>
+<td class=" data" style=" background-color: #9EEDA8;"></td>
+<td class=" data" style=" font-style: italic;">Very light yellowish green</td>
+</tr>
+<tr>
+<td class=" data">BIP</td>
+<td class=" data">CXA030B2</td>
+<td class=" data">H0347194</td>
+<td class=" data" style=" background-color: #A030B2;"></td>
+<td class=" data" style=" font-style: italic;">Brilliant purple</td>
+</tr>
+<tr>
+<td class=" data">BROWN</td>
+<td class=" data">CXA05000</td>
+<td class=" data">H09650FF</td>
+<td class=" data" style=" background-color: #A05000;"></td>
+<td class=" data" style=" font-style: italic;">Brown</td>
+</tr>
+<tr>
+<td class=" data">Sienna</td>
+<td class=" data">CXA0522D</td>
+<td class=" data">H08A6790</td>
+<td class=" data" style="background-color: #A0522D;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">PAP</td>
+<td class=" data">CXA185A6</td>
+<td class=" data">H0349528</td>
+<td class=" data" style=" background-color: #A185A6;"></td>
+<td class=" data" style=" font-style: italic;">Pale purple</td>
+</tr>
+<tr>
+<td class=" data">VLIPB</td>
+<td class=" data">CXA37AE5</td>
+<td class=" data">H017B0AD</td>
+<td class=" data" style="  background-color: #A37AE5;"></td>
+<td class=" data" style=" font-style: italic;">Very light purplish blue</td>
+</tr>
+<tr>
+<td class=" data">STY</td>
+<td class=" data">CXA3BF46</td>
+<td class=" data">H0C2837C</td>
+<td class=" data" style=" background-color: #A3BF46;"></td>
+<td class=" data" style=" font-style: italic;">Strong yellow</td>
+</tr>
+<tr>
+<td class=" data">Brown</td>
+<td class=" data">CXA52A2A</td>
+<td class=" data">H0786898</td>
+<td class=" data" style=" background-color: #A52A2A;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">STO</td>
+<td class=" data">CXA66921</td>
+<td class=" data">H09863AA</td>
+<td class=" data" style="  background-color: #A66921;"></td>
+<td class=" data" style=" font-style: italic;">Strong orange</td>
+</tr>
+<tr>
+<td class=" data">MOO</td>
+<td class=" data">CXA67D4D</td>
+<td class=" data">H0987A5D</td>
+<td class=" data" style=" background-color: #A67D4D;"></td>
+<td class=" data" style=" font-style: italic;">Moderate orange</td>
+</tr>
+<tr>
+<td class=" data">LIYBR</td>
+<td class=" data">CXA69F7A</td>
+<td class=" data">H0AA9033</td>
+<td class=" data" style="  background-color: #A69F7A;"></td>
+<td class=" data" style=" font-style: italic;">Light yellowish brown</td>
+</tr>
+<tr>
+<td class=" data">LIGRYBR</td>
+<td class=" data">CXA6A18A</td>
+<td class=" data">H0AA9822</td>
+<td class=" data" style=" background-color: #A6A18A;"></td>
+<td class=" data" style=" font-style: italic;">Light grayish yellowish brown</td>
+</tr>
+<tr>
+<td class=" data">DarkGray</td>
+<td class=" data">CXA9A9A9</td>
+<td class=" data">H000A900</td>
+<td class=" data" style=" background-color: #A9A9A9;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">GRGY</td>
+<td class=" data">CXA9BF86</td>
+<td class=" data">H0CBA34F</td>
+<td class=" data" style=" background-color: #A9BF86;"></td>
+<td class=" data" style=" font-style: italic;">Grayish greenish yellow</td>
+</tr>
+<tr>
+<td class=" data">MOY</td>
+<td class=" data">CXABBF66</td>
+<td class=" data">H0C29369</td>
+<td class=" data" style=" background-color: #ABBF66;"></td>
+<td class=" data" style=" font-style: italic;">Moderate yellow</td>
+</tr>
+<tr>
+<td class=" data">VLIV</td>
+<td class=" data">CXAC74D9</td>
+<td class=" data">H022A691</td>
+<td class=" data" style="  background-color: #AC74D9;"></td>
+<td class=" data" style=" font-style: italic;">Very light violet</td>
+</tr>
+<tr>
+<td class=" data">LightBlue</td>
+<td class=" data">CXADD8E6</td>
+<td class=" data">H139CA88</td>
+<td class=" data" style=" background-color: #ADD8E6;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">GreenYellow</td>
+<td class=" data">CXADFF2F</td>
+<td class=" data">H0CB97FF</td>
+<td class=" data" style=" background-color: #ADFF2F;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">VPAB</td>
+<td class=" data">CXAEADD9</td>
+<td class=" data">H001C35C</td>
+<td class=" data" style=" background-color: #AEADD9;"></td>
+<td class=" data" style=" font-style: italic;">Very pale blue</td>
+</tr>
+<tr>
+<td class=" data">BIGY</td>
+<td class=" data">CXAEE554</td>
+<td class=" data">H0CB9DBD</td>
+<td class=" data" style=" background-color: #AEE554;"></td>
+<td class=" data" style=" font-style: italic;">Brilliant greenish yellow</td>
+</tr>
+<tr>
+<td class=" data">PaleTurquiose</td>
+<td class=" data">CXAFEEEE</td>
+<td class=" data">H12CCFA6</td>
+<td class=" data" style="background-color: #AFEEEE;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">VIOLET</td>
+<td class=" data">CXB090D0</td>
+<td class=" data">H01EB067</td>
+<td class=" data" style=" background-color: #B090D0;"></td>
+<td class=" data" style=" font-style: italic;">Violet</td>
+</tr>
+<tr>
+<td class=" data">LightSteelBlue</td>
+<td class=" data">CXB0C4DE</td>
+<td class=" data">H14EC769</td>
+<td class=" data" style=" background-color: #B0C4DE;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">PowerBlue</td>
+<td class=" data">CXB0E0E6</td>
+<td class=" data">H131CB85</td>
+<td class=" data" style=" background-color: #B0E0E6;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">LILG</td>
+<td class=" data">CXB1E599</td>
+<td class=" data">H0DDBF99</td>
+<td class=" data" style="  background-color: #B1E599;"></td>
+<td class=" data" style=" font-style: italic;">Light yellow green</td>
+</tr>
+</tbody>
+</table>
+<p style="page-break-after: always;">&#160</p>
+<table class="table" cellspacing="2" cellpadding="1" rules="groups" frame="box" border="1" summary="Procedure Report: Detailed and/or summarized report">
+<colgroup>
+<col></col>
+<col></col>
+<col></col>
+<col></col>
+<col></col>
+</colgroup>
+<thead>
+<tr>
+<th class=" header" width="125">Name</th>
+<th class=" header" width="100">RGB Value</th>
+<th class=" header" width="100">HLS Value</th>
+<th class=" header" width="100">Sample</th>
+<th class=" header" width="175">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class=" data">FireBrick</td>
+<td class=" data">CXB22222</td>
+<td class=" data">H0786AAE</td>
+<td class=" data" style=" background-color: #B22222;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">STPPK</td>
+<td class=" data">CXB2309E</td>
+<td class=" data">H0467194</td>
+<td class=" data" style="  background-color: #B2309E;"></td>
+<td class=" data" style=" font-style: italic;">Strong purplish pink</td>
+</tr>
+<tr>
+<td class=" data">MOPPK</td>
+<td class=" data">CXB25FA5</td>
+<td class=" data">H046895A</td>
+<td class=" data" style="  background-color: #B25FA5;"></td>
+<td class=" data" style=" font-style: italic;">Moderate purplish pink</td>
+</tr>
+<tr>
+<td class=" data">VIO</td>
+<td class=" data">CXB26306</td>
+<td class=" data">H0985CEF</td>
+<td class=" data" style=" background-color: #B26306;"></td>
+<td class=" data" style=" font-style: italic;">Vivid orange</td>
+</tr>
+<tr>
+<td class=" data">GRPPK</td>
+<td class=" data">CXB28FA2</td>
+<td class=" data">H058A130</td>
+<td class=" data" style="  background-color: #B28FA2;"></td>
+<td class=" data" style=" font-style: italic;">Grayish purplish pink</td>
+</tr>
+<tr>
+<td class=" data">LIBGR</td>
+<td class=" data">CXB3B2BF</td>
+<td class=" data">H001B917</td>
+<td class=" data" style="  background-color: #B3B2BF;"></td>
+<td class=" data" style=" font-style: italic;">Light bluish gray</td>
+</tr>
+<tr>
+<td class=" data">GRY</td>
+<td class=" data">CXB5BF93</td>
+<td class=" data">H0C2A942</td>
+<td class=" data" style="  background-color: #B5BF93;"></td>
+<td class=" data" style=" font-style: italic;">Grayish yellow</td>
+</tr>
+<tr>
+<td class=" data">DarkGoldenrod</td>
+<td class=" data">CXB8860B</td>
+<td class=" data">H0A362E3</td>
+<td class=" data" style=" background-color: #B8860B;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">MediumOrchid</td>
+<td class=" data">CXBA55D3</td>
+<td class=" data">H0319497</td>
+<td class=" data" style=" background-color: #BA55D3;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">MOPK</td>
+<td class=" data">CXBA7C87</td>
+<td class=" data">H06D9B4F</td>
+<td class=" data" style=" background-color: #BA7C87;"></td>
+<td class=" data" style=" font-style: italic;">Moderate pink</td>
+</tr>
+<tr>
+<td class=" data">GRPK</td>
+<td class=" data">CXBA9BA1</td>
+<td class=" data">H06DAB2F</td>
+<td class=" data" style=" background-color: #BA9BA1;"></td>
+<td class=" data" style=" font-style: italic;">Grayish pink</td>
+</tr>
+<tr>
+<td class=" data">MOOY</td>
+<td class=" data">CXBAA157</td>
+<td class=" data">H0A5896B</td>
+<td class=" data" style="  background-color: #BAA157;"></td>
+<td class=" data" style=" font-style: italic;">Moderate orange yellow</td>
+</tr>
+<tr>
+<td class=" data">YGR</td>
+<td class=" data">CXBBBFAC</td>
+<td class=" data">H0C2B621</td>
+<td class=" data" style=" background-color: #BBBFAC;"></td>
+<td class=" data" style=" font-style: italic;">Yellowish gray</td>
+</tr>
+<tr>
+<td class=" data">RosyBrown</td>
+<td class=" data">CXBC8F8F</td>
+<td class=" data">H078A641</td>
+<td class=" data" style=" background-color: #BC8F8F;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">VPAG</td>
+<td class=" data">CXBCD9C5</td>
+<td class=" data">H103CA46</td>
+<td class=" data" style=" background-color: #BCD9C5;"></td>
+<td class=" data" style=" font-style: italic;">Very pale green</td>
+</tr>
+<tr>
+<td class=" data">LIPGR</td>
+<td class=" data">CXBDB2BF</td>
+<td class=" data">H034B917</td>
+<td class=" data" style=" background-color: #BDB2BF;"></td>
+<td class=" data" style=" font-style: italic;">Light purplish gray</td>
+</tr>
+<tr>
+<td class=" data">DarkKhaki</td>
+<td class=" data">CXBDB76B</td>
+<td class=" data">H0B09462</td>
+<td class=" data" style=" background-color: #BDB76B;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">LIGY</td>
+<td class=" data">CXBDE57A</td>
+<td class=" data">H0CBB0AD</td>
+<td class=" data" style="  background-color: #BDE57A;"></td>
+<td class=" data" style=" font-style: italic;">Light greenish yellow</td>
+</tr>
+<tr>
+<td class=" data">MOYPK</td>
+<td class=" data">CXBF8580</td>
+<td class=" data">H07D9F55</td>
+<td class=" data" style=" background-color: #BF8580;"></td>
+<td class=" data" style=" font-style: italic;">Moderate yellowish pink</td>
+</tr>
+<tr>
+<td class=" data">VIOY</td>
+<td class=" data">CXBF9106</td>
+<td class=" data">H0A563EF</td>
+<td class=" data" style=" background-color: #BF9106;"></td>
+<td class=" data" style=" font-style: italic;">Vivid orange yellow</td>
+</tr>
+<tr>
+<td class=" data">STOY</td>
+<td class=" data">CXBF9926</td>
+<td class=" data">H0A573AA</td>
+<td class=" data" style=" background-color: #BF9926;"></td>
+<td class=" data" style=" font-style: italic;">Strong orange yellow</td>
+</tr>
+<tr>
+<td class=" data">GRYPK</td>
+<td class=" data">CXBFA5A2</td>
+<td class=" data">H07DB130</td>
+<td class=" data" style="  background-color: #BFA5A2;"></td>
+<td class=" data" style=" font-style: italic;">Grayish yellowish pink</td>
+</tr>
+<tr>
+<td class=" data">PKGR</td>
+<td class=" data">CXBFB2B5</td>
+<td class=" data">H06DB917</td>
+<td class=" data" style="  background-color: #BFB2B5;"></td>
+<td class=" data" style=" font-style: italic;">Pinkish gray</td>
+</tr>
+<tr>
+<td class=" data">BRPK</td>
+<td class=" data">CXBFB9A6</td>
+<td class=" data">H0A5B22A</td>
+<td class=" data" style="  background-color: #BFB9A6;"></td>
+<td class=" data" style=" font-style: italic;">Brownish pink</td>
+</tr>
+<tr>
+<td class=" data">LIGGR</td>
+<td class=" data">CXBFBFBF</td>
+<td class=" data">H0F8BF01</td>
+<td class=" data" style="  background-color: #BFBFBF;"></td>
+<td class=" data" style=" font-style: italic;">Light greenish gray</td>
+</tr>
+<tr>
+<td class=" data">VPAPB</td>
+<td class=" data">CXC0A8E5</td>
+<td class=" data">H017C78B</td>
+<td class=" data" style=" background-color: #C0A8E5;"></td>
+<td class=" data" style=" font-style: italic;">Very pale purplish blue</td>
+</tr>
+<tr>
+<td class=" data">Silver</td>
+<td class=" data">CXC0C0C0</td>
+<td class=" data">H000C000</td>
+<td class=" data" style="background-color: #C0C0C0;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">LIME</td>
+<td class=" data">CXC0FF81</td>
+<td class=" data">H0D2C0FF</td>
+<td class=" data" style=" background-color: #C0FF81;"></td>
+<td class=" data" style=" font-style: italic;">Lime</td>
+</tr>
+<tr>
+<td class=" data">BIY</td>
+<td class=" data">CXC6E55C</td>
+<td class=" data">H0C2A1BA</td>
+<td class=" data" style=" background-color: #C6E55C;"></td>
+<td class=" data" style=" font-style: italic;">Brilliant yellow</td>
+</tr>
+<tr>
+<td class=" data">MediumVioletRed</td>
+<td class=" data">CXC71585</td>
+<td class=" data">H0516ECF</td>
+<td class=" data" style=" background-color: #C71585;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">VLIP</td>
+<td class=" data">CXCB74D9</td>
+<td class=" data">H034A691</td>
+<td class=" data" style="  background-color: #CB74D9;"></td>
+<td class=" data" style=" font-style: italic;">Very light purple</td>
+</tr>
+<tr>
+<td class=" data">VPAV</td>
+<td class=" data">CXCBA8E5</td>
+<td class=" data">H022C78B</td>
+<td class=" data" style=" background-color: #CBA8E5;"></td>
+<td class=" data" style=" font-style: italic;">Very pale violet</td>
+</tr>
+<tr>
+<td class=" data">PAGY</td>
+<td class=" data">CXCBE5A1</td>
+<td class=" data">H0CBC392</td>
+<td class=" data" style="  background-color: #CBE5A1;"></td>
+<td class=" data" style=" font-style: italic;">Pale greenish yellow</td>
+</tr>
+<tr>
+<td class=" data">VIPK</td>
+<td class=" data">CXCC1B3B</td>
+<td class=" data">H06D74C3</td>
+<td class=" data" style=" background-color: #CC1B3B;"></td>
+<td class=" data" style=" font-style: italic;">Vivid pink</td>
+</tr>
+<tr>
+<td class=" data">VIYPK</td>
+<td class=" data">CXCC2B1B</td>
+<td class=" data">H07D74C3</td>
+<td class=" data" style=" background-color: #CC2B1B;"></td>
+<td class=" data" style=" font-style: italic;">Vivid yellowish pink</td>
+</tr>
+<tr>
+<td class=" data">STYPK</td>
+<td class=" data">CXCC5D52</td>
+<td class=" data">H07D8F8B</td>
+<td class=" data" style="  background-color: #CC5D52;"></td>
+<td class=" data" style=" font-style: italic;">Strong yellowish pink</td>
+</tr>
+<tr>
+<td class=" data">IndianRed</td>
+<td class=" data">CXCD5C5C</td>
+<td class=" data">H0789588</td>
+<td class=" data" style=" background-color: #CD5C5C;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">Peru</td>
+<td class=" data">CXCD853F</td>
+<td class=" data">H0958696</td>
+<td class=" data" style="  background-color: #CD853F;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">LIY</td>
+<td class=" data">CXCDE57A</td>
+<td class=" data">H0C2B0AD</td>
+<td class=" data" style="  background-color: #CDE57A;"></td>
+<td class=" data" style=" font-style: italic;">Light yellow</td>
+</tr>
+<tr>
+<td class=" data">PALG</td>
+<td class=" data">CXD1E5C7</td>
+<td class=" data">H0DDD660</td>
+<td class=" data" style=" background-color: #D1E5C7;"></td>
+<td class=" data" style=" font-style: italic;">Pale yellow green</td>
+</tr>
+<tr>
+<td class=" data">Chocolate</td>
+<td class=" data">CXD2691E</td>
+<td class=" data">H09078C0</td>
+<td class=" data" style="  background-color: #D2691E;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">Tan</td>
+<td class=" data">CXD2B48C</td>
+<td class=" data">H09AAF70</td>
+<td class=" data" style="  background-color: #D2B48C;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">VPAP</td>
+<td class=" data">CXD3ADD9</td>
+<td class=" data">H034C35C</td>
+<td class=" data" style=" background-color: #D3ADD9;"></td>
+<td class=" data" style=" font-style: italic;">Very pale purple</td>
+</tr>
+<tr>
+<td class=" data">LightGrey</td>
+<td class=" data">CXD3D3D3</td>
+<td class=" data">H000D300</td>
+<td class=" data" style="  background-color: #D3D3D3;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">Thistle</td>
+<td class=" data">CXD8BFD8</td>
+<td class=" data">H03BCC3E</td>
+<td class=" data" style="  background-color: #D8BFD8;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">BIPPK</td>
+<td class=" data">CXD93ABF</td>
+<td class=" data">H04689AC</td>
+<td class=" data" style="  background-color: #D93ABF;"></td>
+<td class=" data" style=" font-style: italic;">Brilliant purplish pink</td>
+</tr>
+<tr>
+<td class=" data">STPK</td>
+<td class=" data">CXD9576E</td>
+<td class=" data">H06D98A1</td>
+<td class=" data" style="  background-color: #D9576E;"></td>
+<td class=" data" style=" font-style: italic;">Strong pink</td>
+</tr>
+</tbody>
+</table>
+<p style="page-break-after: always;">&#160</p>
+<table class="table" cellspacing="2" cellpadding="1" rules="groups" frame="box" border="1" summary="Procedure Report: Detailed and/or summarized report">
+<colgroup>
+<col></col>
+<col></col>
+<col></col>
+<col></col>
+<col></col>
+</colgroup>
+<thead>
+<tr>
+<th class=" header" width="125">Name</th>
+<th class=" header" width="100">RGB Value</th>
+<th class=" header" width="100">HLS Value</th>
+<th class=" header" width="100">Sample</th>
+<th class=" header" width="175">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class=" data">LIPPK</td>
+<td class=" data">CXD974C9</td>
+<td class=" data">H046A691</td>
+<td class=" data" style="  background-color: #D974C9;"></td>
+<td class=" data" style=" font-style: italic;">Light purplish pink</td>
+</tr>
+<tr>
+<td class=" data">BIO</td>
+<td class=" data">CXD9892B</td>
+<td class=" data">H09882B1</td>
+<td class=" data" style="  background-color: #D9892B;"></td>
+<td class=" data" style=" font-style: italic;">Brilliant orange</td>
+</tr>
+<tr>
+<td class=" data">LIO</td>
+<td class=" data">CXD9A465</td>
+<td class=" data">H0989F99</td>
+<td class=" data" style="  background-color: #D9A465;"></td>
+<td class=" data" style=" font-style: italic;">Light orange</td>
+</tr>
+<tr>
+<td class=" data">PAY</td>
+<td class=" data">CXD9E5B0</td>
+<td class=" data">H0C2CB83</td>
+<td class=" data" style=" background-color: #D9E5B0;"></td>
+<td class=" data" style=" font-style: italic;">Pale yellow</td>
+</tr>
+<tr>
+<td class=" data">Orchid</td>
+<td class=" data">CXDA70D6</td>
+<td class=" data">H03DA597</td>
+<td class=" data" style="  background-color: #DA70D6;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">Goldenrod</td>
+<td class=" data">CXDAA520</td>
+<td class=" data">H0A37DBE</td>
+<td class=" data" style=" background-color: #DAA520;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">PaleVioletRed</td>
+<td class=" data">CXDB7093</td>
+<td class=" data">H065A699</td>
+<td class=" data" style="  background-color: #DB7093;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">Crimson</td>
+<td class=" data">CXDC143C</td>
+<td class=" data">H06D78D5</td>
+<td class=" data" style="  background-color: #DC143C;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">Gainsboro</td>
+<td class=" data">CXDCDCDC</td>
+<td class=" data">H000DC00</td>
+<td class=" data" style="  background-color: #DCDCDC;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">Plum</td>
+<td class=" data">CXDDA0DD</td>
+<td class=" data">H03BBF79</td>
+<td class=" data" style="  background-color: #DDA0DD;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">Burlywood</td>
+<td class=" data">CXDEB887</td>
+<td class=" data">H09AB391</td>
+<td class=" data" style="  background-color: #DEB887;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">BWH</td>
+<td class=" data">CXDEDDED</td>
+<td class=" data">H001E54E</td>
+<td class=" data" style="  background-color: #DEDDED;"></td>
+<td class=" data" style=" font-style: italic;">Bluish white</td>
+</tr>
+<tr>
+<td class=" data">LILAC</td>
+<td class=" data">CXE06090</td>
+<td class=" data">H062A0AC</td>
+<td class=" data" style="  background-color: #E06090;"></td>
+<td class=" data" style=" font-style: italic;">Lilac</td>
+</tr>
+<tr>
+<td class=" data">TAN</td>
+<td class=" data">CXE0A860</td>
+<td class=" data">H09AA0AC</td>
+<td class=" data" style="  background-color: #E0A860;"></td>
+<td class=" data" style=" font-style: italic;">Tan</td>
+</tr>
+<tr>
+<td class=" data">LightCyan</td>
+<td class=" data">CXE0FFFF</td>
+<td class=" data">H12CF0FF</td>
+<td class=" data" style="  background-color: #E0FFFF;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">LIPK</td>
+<td class=" data">CXE599A7</td>
+<td class=" data">H06DBF99</td>
+<td class=" data" style="  background-color: #E599A7;"></td>
+<td class=" data" style=" font-style: italic;">Light pink</td>
+</tr>
+<tr>
+<td class=" data">LIYPK</td>
+<td class=" data">CXE5A099</td>
+<td class=" data">H07DBF99</td>
+<td class=" data" style=" background-color: #E5A099;"></td>
+<td class=" data" style=" font-style: italic;">Light yellowish pink</td>
+</tr>
+<tr>
+<td class=" data">BIOY</td>
+<td class=" data">CXE5B82E</td>
+<td class=" data">H0A58AC8</td>
+<td class=" data" style=" background-color: #E5B82E;"></td>
+<td class=" data" style=" font-style: italic;">Brilliant orange yellow</td>
+</tr>
+<tr>
+<td class=" data">PAPPK</td>
+<td class=" data">CXE5B8D0</td>
+<td class=" data">H058CF79</td>
+<td class=" data" style=" background-color: #E5B8D0;"></td>
+<td class=" data" style=" font-style: italic;">Pale purplish pink</td>
+</tr>
+<tr>
+<td class=" data">PAPK</td>
+<td class=" data">CXE5BFC6</td>
+<td class=" data">H06DD26D</td>
+<td class=" data" style=" background-color: #E5BFC6;"></td>
+<td class=" data" style=" font-style: italic;">Pale pink</td>
+</tr>
+<tr>
+<td class=" data">PAYPK</td>
+<td class=" data">CXE5C5C2</td>
+<td class=" data">H07DD468</td>
+<td class=" data" style=" background-color: #E5C5C2;"></td>
+<td class=" data" style=" font-style: italic;">Pale yellowish pink</td>
+</tr>
+<tr>
+<td class=" data">LIOY</td>
+<td class=" data">CXE5C76B</td>
+<td class=" data">H0A5A8B4</td>
+<td class=" data" style=" background-color: #E5C76B;"></td>
+<td class=" data" style=" font-style: italic;">Light orange yellow</td>
+</tr>
+<tr>
+<td class=" data">PAOY</td>
+<td class=" data">CXE5D4A1</td>
+<td class=" data">H0A5C392</td>
+<td class=" data" style=" background-color: #E5D4A1;"></td>
+<td class=" data" style=" font-style: italic;">Pale orange yellow</td>
+</tr>
+<tr>
+<td class=" data">Lavender</td>
+<td class=" data">CXE6E6FA</td>
+<td class=" data">H000F0AA</td>
+<td class=" data" style="  background-color: #E6E6FA;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">CREAM</td>
+<td class=" data">CXE8D898</td>
+<td class=" data">H0A8C0A2</td>
+<td class=" data" style="  background-color: #E8D898;"></td>
+<td class=" data" style=" font-style: italic;">Cream</td>
+</tr>
+<tr>
+<td class=" data">YWH</td>
+<td class=" data">CXE8EDD5</td>
+<td class=" data">H0C2E166</td>
+<td class=" data" style="  background-color: #E8EDD5;"></td>
+<td class=" data" style=" font-style: italic;">Yellowish white</td>
+</tr>
+<tr>
+<td class=" data">DarkSalmon</td>
+<td class=" data">CXE9967A</td>
+<td class=" data">H086B2B7</td>
+<td class=" data" style="  background-color: #E9967A;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">PWH</td>
+<td class=" data">CXEBDDED</td>
+<td class=" data">H034E54E</td>
+<td class=" data" style="  background-color: #EBDDED;"></td>
+<td class=" data" style=" font-style: italic;">Purplish white</td>
+</tr>
+<tr>
+<td class=" data">GWH</td>
+<td class=" data">CXECEDEC</td>
+<td class=" data">H0F8ED06</td>
+<td class=" data" style="  background-color: #ECEDEC;"></td>
+<td class=" data" style=" font-style: italic;">Greenish white</td>
+</tr>
+<tr>
+<td class=" data">PKWH</td>
+<td class=" data">CXEDDDE0</td>
+<td class=" data">H06DE54E</td>
+<td class=" data" style="  background-color: #EDDDE0;"></td>
+<td class=" data" style=" font-style: italic;">Pinkish white</td>
+</tr>
+<tr>
+<td class=" data">Violet</td>
+<td class=" data">CXEE82EE</td>
+<td class=" data">H03BB8C2</td>
+<td class=" data" style="  background-color: #EE82EE;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">PaleGoldenrod</td>
+<td class=" data">CXEEE8AA</td>
+<td class=" data">H0AFCCAA</td>
+<td class=" data" style=" background-color: #EEE8AA;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">LightCoral</td>
+<td class=" data">CXF08080</td>
+<td class=" data">H078B8CA</td>
+<td class=" data" style=" background-color: #F08080;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">Khaki</td>
+<td class=" data">CXF0E68C</td>
+<td class=" data">H0AEBEC5</td>
+<td class=" data" style=" background-color: #F0E68C;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">AliceBlue</td>
+<td class=" data">CXF0F8FF</td>
+<td class=" data">H147F8FF</td>
+<td class=" data" style="background-color: #F0F8FF;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">Honeydew</td>
+<td class=" data">CXF0FFF0</td>
+<td class=" data">H0EFF8FF</td>
+<td class=" data" style="  background-color: #F0FFF0;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">Azure</td>
+<td class=" data">CXF0FFFF</td>
+<td class=" data">H12CF8FF</td>
+<td class=" data" style=" background-color: #F0FFFF;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">SandyBrown</td>
+<td class=" data">CXF4A460</td>
+<td class=" data">H093AADE</td>
+<td class=" data" style="  background-color: #F4A460;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">Wheat</td>
+<td class=" data">CXF5DEB3</td>
+<td class=" data">H09FD4C4</td>
+<td class=" data" style="  background-color: #F5DEB3;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">Beige</td>
+<td class=" data">CXF5F5DC</td>
+<td class=" data">H0B4E98E</td>
+<td class=" data" style=" background-color: #F5F5DC;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">WhiteSmoke</td>
+<td class=" data">CXF5F5F5</td>
+<td class=" data">H000F500</td>
+<td class=" data" style="  background-color: #F5F5F5;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">MintCream</td>
+<td class=" data">CXF5FFFA</td>
+<td class=" data">H10EFAFF</td>
+<td class=" data" style=" background-color: #F5FFFA;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">GhostWhite</td>
+<td class=" data">CXF8F8FF</td>
+<td class=" data">H000FCFF</td>
+<td class=" data" style="  background-color: #F8F8FF;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">Salmon</td>
+<td class=" data">CXFA8072</td>
+<td class=" data">H07DB6EE</td>
+<td class=" data" style="  background-color: #FA8072;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">AntiqueWhite</td>
+<td class=" data">CXFAEBD7</td>
+<td class=" data">H09AE9C7</td>
+<td class=" data" style="  background-color: #FAEBD7;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">Linen</td>
+<td class=" data">CXFAF0E6</td>
+<td class=" data">H096F0AA</td>
+<td class=" data" style=" background-color: #FAF0E6;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">LightGoldenrodYellow</td>
+<td class=" data">CXFAFAD2</td>
+<td class=" data">H0B4E6CC</td>
+<td class=" data" style=" background-color: #FAFAD2;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p style="page-break-after: always;">&#160</p>
+<table class="table" cellspacing="2" cellpadding="1" rules="groups" frame="box" border="1" summary="Procedure Report: Detailed and/or summarized report">
+<colgroup>
+<col></col>
+<col></col>
+<col></col>
+<col></col>
+<col></col>
+</colgroup>
+<thead>
+<tr>
+<th class=" header" width="125">Name</th>
+<th class=" header" width="100">RGB Value</th>
+<th class=" header" width="100">HLS Value</th>
+<th class=" header" width="100">Sample</th>
+<th class=" header" width="175">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class=" data">Oldlace</td>
+<td class=" data">CXFDF5E6</td>
+<td class=" data">H09FF2DA</td>
+<td class=" data" style=" background-color: #FDF5E6;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">RED</td>
+<td class=" data">CXFF0000</td>
+<td class=" data">H07880FF</td>
+<td class=" data" style="background-color: #FF0000;"></td>
+<td class=" data" style=" font-style: italic;">Red</td>
+</tr>
+<tr>
+<td class=" data">SALMON</td>
+<td class=" data">CXFF0055</td>
+<td class=" data">H06480FF</td>
+<td class=" data" style="  background-color: #FF0055;"></td>
+<td class=" data" style=" font-style: italic;">Salmon</td>
+</tr>
+<tr>
+<td class=" data">PINK</td>
+<td class=" data">CXFF0080</td>
+<td class=" data">H05980FF</td>
+<td class=" data" style="  background-color: #FF0080;"></td>
+<td class=" data" style=" font-style: italic;">Pink</td>
+</tr>
+<tr>
+<td class=" data">MAGENTA</td>
+<td class=" data">CXFF00FF</td>
+<td class=" data">H03C80FF</td>
+<td class=" data" style=" background-color: #FF00FF;"></td>
+<td class=" data" style=" font-style: italic;">Magenta</td>
+</tr>
+<tr>
+<td class=" data">DeepPink</td>
+<td class=" data">CXFF1493</td>
+<td class=" data">H0578AFF</td>
+<td class=" data" style="background-color: #FF1493;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">OrangeRed</td>
+<td class=" data">CXFF4500</td>
+<td class=" data">H08780FF</td>
+<td class=" data" style=" background-color: #FF4500;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">ROSE</td>
+<td class=" data">CXFF6060</td>
+<td class=" data">H078B0FF</td>
+<td class=" data" style=" background-color: #FF6060;"></td>
+<td class=" data" style=" font-style: italic;">Rose</td>
+</tr>
+<tr>
+<td class=" data">Tomato</td>
+<td class=" data">CXFF6347</td>
+<td class=" data">H080A3FF</td>
+<td class=" data" style="background-color: #FF6347;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">HotPink</td>
+<td class=" data">CXFF69B4</td>
+<td class=" data">H059B4FF</td>
+<td class=" data" style="  background-color: #FF69B4;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">Coral</td>
+<td class=" data">CXFF7F50</td>
+<td class=" data">H087A8FF</td>
+<td class=" data" style=" background-color: #FF7F50;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">ORANGE</td>
+<td class=" data">CXFF8000</td>
+<td class=" data">H09680FF</td>
+<td class=" data" style=" background-color: #FF8000;"></td>
+<td class=" data" style=" font-style: italic;">Orange</td>
+</tr>
+<tr>
+<td class=" data">DarkOrange</td>
+<td class=" data">CXFF8C00</td>
+<td class=" data">H09980FF</td>
+<td class=" data" style=" background-color: #FF8C00;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">LightSalmon</td>
+<td class=" data">CXFFA07A</td>
+<td class=" data">H088BDFF</td>
+<td class=" data" style="  background-color: #FFA07A;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">Orange</td>
+<td class=" data">CXFFA500</td>
+<td class=" data">H09F80FF</td>
+<td class=" data" style=" background-color: #FFA500;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">GOLD</td>
+<td class=" data">CXFFAA00</td>
+<td class=" data">H0A080FF</td>
+<td class=" data" style="  background-color: #FFAA00;"></td>
+<td class=" data" style=" font-style: italic;">Gold</td>
+</tr>
+<tr>
+<td class=" data">LightPink</td>
+<td class=" data">CXFFB6C1</td>
+<td class=" data">H06FDBFF</td>
+<td class=" data" style="  background-color: #FFB6C1;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">Pink</td>
+<td class=" data">CXFFC0CB</td>
+<td class=" data">H06EE0FF</td>
+<td class=" data" style="background-color: #FFC0CB;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">Gold</td>
+<td class=" data">CXFFD700</td>
+<td class=" data">H0AB80FF</td>
+<td class=" data" style="  background-color: #FFD700;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">Peachpuff</td>
+<td class=" data">CXFFDAB9</td>
+<td class=" data">H094DCFF</td>
+<td class=" data" style="background-color: #FFDAB9;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">NavajoWhite</td>
+<td class=" data">CXFFDEAD</td>
+<td class=" data">H09CD6FF</td>
+<td class=" data" style="background-color: #FFDEAD;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">Moccasin</td>
+<td class=" data">CXFFE4B5</td>
+<td class=" data">H09EDAFF</td>
+<td class=" data" style="background-color: #FFE4B5;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">Bisque</td>
+<td class=" data">CXFFE4C4</td>
+<td class=" data">H098E2FF</td>
+<td class=" data" style="  background-color: #FFE4C4;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">MistyRose</td>
+<td class=" data">CXFFE4E1</td>
+<td class=" data">H07DF0FF</td>
+<td class=" data" style=" background-color: #FFE4E1;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">BlanchedAlmond</td>
+<td class=" data">CXFFEBCD</td>
+<td class=" data">H09CE6FF</td>
+<td class=" data" style="  background-color: #FFEBCD;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">PapayaWhip</td>
+<td class=" data">CXFFEFD5</td>
+<td class=" data">H09DEAFF</td>
+<td class=" data" style="  background-color: #FFEFD5;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">LavenderBlush</td>
+<td class=" data">CXFFF0F5</td>
+<td class=" data">H064F8FF</td>
+<td class=" data" style="background-color: #FFF0F5;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">Seashell</td>
+<td class=" data">CXFFF5EE</td>
+<td class=" data">H090F7FF</td>
+<td class=" data" style="  background-color: #FFF5EE;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">Cornsilk</td>
+<td class=" data">CXFFF8DC</td>
+<td class=" data">H0A9EEFF</td>
+<td class=" data" style=" background-color: #FFF8DC;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">LemonChiffon</td>
+<td class=" data">CXFFFACD</td>
+<td class=" data">H0AEE6FF</td>
+<td class=" data" style="  background-color: #FFFACD;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">FloralWhite</td>
+<td class=" data">CXFFFAF0</td>
+<td class=" data">H0A0F8FF</td>
+<td class=" data" style="background-color: #FFFAF0;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">Snow</td>
+<td class=" data">CXFFFAFA</td>
+<td class=" data">H078FDFF</td>
+<td class=" data" style=" background-color: #FFFAFA;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">YELLOW</td>
+<td class=" data">CXFFFF00</td>
+<td class=" data">H0B480FF</td>
+<td class=" data" style=" background-color: #FFFF00;"></td>
+<td class=" data" style=" font-style: italic;">Yellow</td>
+</tr>
+<tr>
+<td class=" data">LightYellow</td>
+<td class=" data">CXFFFFE0</td>
+<td class=" data">H0B4F0FF</td>
+<td class=" data" style=" background-color: #FFFFE0;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">Ivory</td>
+<td class=" data">CXFFFFF0</td>
+<td class=" data">H0B4F8FF</td>
+<td class=" data" style=" background-color: #FFFFF0;"></td>
+<td class="c data" style=" font-style: italic;">&nbsp;</td>
+</tr>
+<tr>
+<td class=" data">WHITE</td>
+<td class=" data">CXFFFFFF</td>
+<td class=" data">H000FF00</td>
+<td class=" data" style="background-color: #FFFFFF;"></td>
+<td class=" data" style=" font-style: italic;">White</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+<!--end data -->
+</td>
+</tr>
+</table>
+
+<!-- ***** DO NOT EDIT ANYTHING UNDER THIS ***** -->
+<div class="clear"><!-- needed for ie6 --></div>  
+</div>
+<div class="clear"><!-- --></div> 
+<div class="clear">
+  <!-- -->
+</div>
+<div id="footer">
+<!--stopindex--> 
+<!--googleoff: all-->
+  <a href="http://support.sas.com/contact/index.html">Contact Us</a> | <a href="http://support.sas.com/sitemap.html">Sitemap</a> | <a href="http://support.sas.com/community/rss/">RSS Feeds</a> | <a href="http://www.sas.com/en_us/home.html">www.sas.com</a> | <a href="http://www.sas.com/en_us/legal/copyright.html">Terms of Use &amp; Legal Information</a> | <a href="http://www.sas.com/en_us/legal/privacy.html">Privacy Statement</a><br />
+  <script>writeCopyright();</script>
+  <!--googleon: all-->
+  <!--startindex-->
+  
+<script type="text/javascript" src="/lib/navigation/topnav_set.js"></script>
+<script type="text/javascript" src="/lib/sectiontitle.js"></script>
+
+<script type="text/javascript">
+  try {
+  selectSearchCollection();
+      }
+  catch(err) {
+  //search collection failed
+      }
+</script>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-1022528-1");
+pageTracker._setDomainName("sas.com");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+
+
+<!-- BEGIN LivePerson Monitor. -->
+<script src="/lib/liveperson/mtagconfig.js" type="text/javascript"></script>
+<!-- END LivePerson Monitor. -->
+
+
+<script src="/lib/SASCXA.js" type="text/javascript"></script>
+
+
+<!-- click tag -->
+<script language="javascript" type="text/javascript" src="/lib/SASTag.js"></script>
+<script language="javascript" type="text/javascript" src="/lib/SASSiteConfig_SAS_SUPPORT.js"></script>
+<script language="javascript" type="text/javascript">st_init();</script>
+<noscript><img src="//collect.sas.com/sastag/SASTag.gif?JS=0$URI=/TagsDisabled" border="0"></noscript>
+
+</div>
+
+
+
+</div>
+</body>
+</html>
