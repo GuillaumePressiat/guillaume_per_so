@@ -17,8 +17,8 @@
             anchorcolor = blue
 }}
 \usepackage[utf8]{inputenc}
-\usepackage[top=1.1cm, bottom=1.1cm, left=1.5cm, right=1.5cm]{geometry}
-%\setlength{\hintscolumnwidth}{2.5cm}
+\usepackage[top=1cm, bottom=1cm, left=1cm, right=1.2cm]{geometry}
+\setlength{\hintscolumnwidth}{2.25cm}
 
 \firstname{Guillaume}
 \familyname{Pressiat}
@@ -26,28 +26,31 @@
 \title{Statisticien appliqué}
 \address{3 rue Delbet}{75014 Paris}
 \email{guillaume.pressiat@gmail.com}
-\extrainfo{Âge : 29 ans}
+\extrainfo{Âge : 30 ans}
 \mobile{06 71 15 28 28}
 
-\photo[50pt][0.4pt]{photo.png}
+\photo[40pt][0.4pt]{photo.png}
 
 \begin{document}
 \maketitle
 
 
 \section{Expériences professionnelles}
-\linespread{1.2}
-\cventry{2014 -- 2018}{AP-HP}{Assistance Publique - Hôpitaux de Paris}{Paris}{}{
+\linespread{1.1}
+\cventry{2014 -- 2019}{AP-HP}{Assistance Publique - Hôpitaux de Paris}{Paris}{}{
 \begin{itemize}
 \item Au sein du département d'information médicale (DIM) du Siège de l’AP-HP
 \item Études thématiques : cancérologie, parts d'activités régionales, rapprochement inter-champs
-\item Cartographies (géolocalisation, cartes dynamiques, cartes choropleèthes) et graphes de flux
-\item Communication congrès Emois : Approche géo-populationnelle de la précarité à partir du PMSI et de données Insee (indicateur FDep)
-\item Développements :
+\item  Envois PMSI : consolidation de l'entité juridique AP-HP à partir de ses entités géographiques
+\item  Processus automatisés du management des données à la production d'indicateurs
+\item Cartographies (géolocalisation, cartes dynamiques, cartes choroplèthes)\href{https://guillaumepressiat.github.io/finess_etalab/rmd/import_etalab.html}{*}
+\item Parcours de patients par pathologie (consultations / hospitalisations, délais, flux avec sunburst, TramineR)
+\item Communication et poster congrès Emois : Approche géo-populationnelle de la précarité à partir du PMSI et de données Insee (indicateur FDep) ; Chimiothérapie et décès pour cancer métastique
+\item Algorithmes de machine learning et de traitement automatisé du langage appliqués à la classification de compte-rendus hospitaliers (CRH, CRO) pour aider au codage PMSI
+\item Développements : \href{https://github.com/GuillaumePressiat/}{lien github}
 \begin{itemize}
-\item \href{https://guillaumepressiat.github.io/}{pmeasyr} : package R pour l’import des données PMSI
-\item Applications shiny et api pour diffuser les nomenclatures et référentiels dans l’institution
-\item  Flux automatisés du management des données à la production d'indicateurs
+\item \href{https://guillaumepressiat.github.io/}{pmeasyr} : données PMSI avec R - \href{https://guillaumepressiat.github.io/nomensland}{nomensland} : nomenclatures et référentiels PMSI - voir cette \href{https://guillaumepressiat.github.io/miscellany/connexes/}{représentation} pour plus d'informations
+\item Applications et api pour diffuser les référentiels et méthodes du PMSI dans l’institution
 \end{itemize}
 \end{itemize}}
 
@@ -66,9 +69,10 @@
 \linespread{1}
 \section{Programmation et informatique}
 
-\cvitem{Programmes}{R, Python, SAS, SQL, Git, Jekyll}
-\cvitem{Reporting}{LaTeX, markdown, HTML, Javascript}
+\cvitem{Programmes}{R, Python, SAS, SQL, Git, Hive, Spark}
+\cvitem{Reporting}{LaTeX, markdown, HTML, Javascript, Jupyter}
 \cvitem{Bureautique}{Suite Office (Excel, Word, Powerpoint), Adobe CS5}
+
 
 \section{Études}
 \cventry{2011 -- 2012}{Master 2 Mathématiques appliquées}{Paris Descartes}{}{}{}{}
@@ -79,15 +83,15 @@
 \cvitem{Anglais}{Professionel : lecture d’articles, enseignements suivis en anglais}
 \cvitem{Allemand}{Connaissances de base}
 
-
-\section{Expériences annexes}
+\section{Expériences annexes, loisirs}
 \cvitem{2007 -- 2008}{Cours particuliers de mathématiques à des élèves de collège et de lycée}{}{}
 \cvitem{2005 -- 2012}{Travail sur une exploitation agricole en période estivale}{}{}
+\cvitem{Loisirs}{Guitare, style finger-picking, folk, rock, blues; Sports : Vélo (route, cyclosport-randonée), pêche aux leurres; Lecture)} 
 
-\section{Loisirs}
-\cvitem{}{Guitare acoustique, style finger-picking)}
-\cvitem{}{Sports : Vélo (route, cyclosport), pêche aux leurres}
-\cvitem{}{Lecture}
+%\section{Loisirs}
+%\cvitem{}{Guitare, style finger-picking, folk, rock, blues; Sports : Vélo (route, cyclosport-randonée), pêche aux leurres; Lecture)} 
+%\cvitem{}{Sports : Vélo (route, cyclosport-randonée), pêche aux leurres}
+%\cvitem{}{Lecture}
 
 
 \end{document}
