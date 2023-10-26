@@ -4,6 +4,7 @@
 
 \renewcommand*{\namefont}{\fontsize{24}{29}\mdseries\upshape}
 
+\usepackage{pifont}
 
 %http://latexcolor.com/
 \definecolor{arsenic}{rgb}{0.23, 0.27, 0.29}
@@ -17,7 +18,9 @@
             anchorcolor = blue
 }}
 \usepackage[utf8]{inputenc}
-\usepackage[top=1cm, bottom=1cm, left=1cm, right=1.2cm]{geometry}
+\usepackage[top=1cm, bottom=1.2cm, left=1cm, right=1.2cm]{geometry}
+\usepackage{enumitem}
+
 \setlength{\hintscolumnwidth}{2.25cm}
 
 \firstname{Guillaume}
@@ -29,77 +32,101 @@
 \extrainfo{Âge : 34 ans}
 \mobile{06 71 15 28 28}
 
-\photo[40pt][0.4pt]{photo.png}
+\photo[50pt][0.4pt]{photo2_bw.png}
+
 
 \begin{document}
 \maketitle
 
 
 \section{Expériences professionnelles}
-\linespread{1.2}
+\linespread{0.85}
 
-\cventry{2019 -- 2023}{CHRU de Brest}{Site de la Cavale Blanche}{Brest}{}{
-\begin{itemize}
-\item Département d'information médicale (DIM)
-\begin{itemize}
+\cventry{2019 -- 2023}{CHRU de Brest}{GHT Bretagne Occidentale}{Brest}{}{
+\vspace{0.1mm}
+\begin{itemize}[leftmargin=-0.5in]
+\item {Département d'information médicale (DIM)}
+\begin{itemize}[leftmargin=0.4in]
 \item Gestion de la production, modernisation de la chaîne du traitement de l’information par les TIM
-\item Suivis automatisés des processus de la donnée (exhaustivité, qualité)
-\item Automatisation du codage (séances, hospitalisations courtes), programmation d’une interface H'XML pour la saisie automatisée de diagnostics
+\item Suivis automatisés des processus de la donnée (relances des services, exhaustivité, qualité)
+\item Automatisation du codage (séances, hospitalisations courtes), programmation d’une interface H'XML pour l'intégration  des diagnostics automatisée dans le logiciel PMSI
 \item Veille réglementaire et technique
-\item Études ciblées : potentiels des HDJ gradation, projections d’activités pour le schéma directeur immobilier
+\item Études ciblées : potentiels des HDJ gradation, projections d’activités pour le schéma directeur immobilier 
 \item Requêtes et analyses à la demande des services, de la recherche et pour le dialogue de gestion
 \item Coordination des envois du groupement hospitalier de territoire
 \end{itemize}
-\item Administration, science des données (SID / EDS)
-\begin{itemize}
+\item {Administration, science des données (SID / EDS)}
+\begin{itemize}[leftmargin=0.4in]
 \item Nouveau système d'information décisionnel (SID) centré autour du PMSI : élaboration, alimentation et maintenance 
 \item Nouvel entrepôt de données de santé (bases de données, data lake, fichiers parquet) : co-construction et alimentation
 \item Traitement du langage naturel (NLP) pour optimiser le codage des sévérités à partir des comptes-rendus
 \item Identitovigilance (doublons de patients, appariement aux décès de l'INSEE, appariements divers)
 \item package python \href{https://guillaumepressiat.github.io/pypmsi/}{pypmsi} et \href{https://github.com/GuillaumePressiat/refpymsi}{refpymsi}  pour lire et analyser les données et référentiels PMSI
 \end{itemize}
-\item Projets transversaux 
-\begin{itemize}
+\item {Projets transversaux}
+\begin{itemize}[leftmargin=0.4in]
 \item Amélioration des processus transversaux avec les autres acteurs de la donnée (pharmacie, bureau des entrées, transports)
 \item Gestion et management des projets SID PMSI en lien avec les collègues du DIM
 \item Pilotage métier des projets SI, relation avec les référents applicatifs notamment sur l'interopérabilité
 \item Rédaction des processus et cartographies applicatives dans le domaine T2A
-\item Sensibilisation et initiation aux données de santé lors de l’accueil de nouveaux arrivants (DIM, DSI, DAF)
+\item Sensibilisation et initiation aux données de santé lors de l’accueil de nouveaux arrivants
 \item Encadrement de stagiaires alternants en statistiques et interne de santé publique
 \end{itemize}
 \end{itemize}}
 
+ \vspace{5mm}
 
 \cventry{2014 -- 2019}{AP-HP}{Assistance Publique - Hôpitaux de Paris}{Paris}{}{
-\begin{itemize}
-\item Au sein du département d'information médicale (DIM) du Siège de l’AP-HP
+\vspace{0.1mm}
+\begin{itemize}[leftmargin=-0.5in]
+\item Au sein du département d'information médicale (SIMAP) du Siège de l’AP-HP
+\begin{itemize}[leftmargin=0.4in]
 \item Études thématiques : cancérologie, parts d'activités régionales, rapprochement inter-champs
-\item  Envois PMSI : consolidation de l'entité juridique AP-HP à partir de ses entités géographiques
-\item  Processus automatisés du management des données à la production d'indicateurs
+\item Envois PMSI : consolidation de l'entité juridique AP-HP à partir de ses entités géographiques
+\item Processus automatisés du management des données à la production d'indicateurs
 \item Cartographies (géolocalisation, cartes dynamiques, cartes choroplèthes)\href{https://guillaumepressiat.github.io/finess_etalab/rmd/import_etalab.html}{*}
 \item Parcours de patients par pathologie (consultations / hospitalisations, délais, flux avec sunburst, TramineR)
 \item Communication et poster congrès Emois : Approche géo-populationnelle de la précarité à partir du PMSI et de données Insee (indicateur FDep) ; Chimiothérapie et décès pour cancer métastique
-\item Algorithmes de machine learning et de traitement automatisé du langage appliqués à la classification de compte-rendus hospitaliers (CRH, CRO) pour aider au codage PMSI
+\item Algorithmes de machine learning et de traitement automatisé du langage appliqués à la classification de compte-rendus hospitaliers pour aider au codage PMSI
 \item Développements : \href{https://github.com/GuillaumePressiat/}{lien github}
 \begin{itemize}
 \item \href{https://guillaumepressiat.github.io/}{pmeasyr} : données PMSI avec R - \href{https://guillaumepressiat.github.io/nomensland}{nomensland} : nomenclatures et référentiels PMSI - voir cette \href{https://guillaumepressiat.github.io/miscellany/connexes/}{représentation} pour plus d'informations
 \item Applications et api pour diffuser les référentiels et méthodes du PMSI dans l’institution
 \end{itemize}
+\item Automatisation du rapport annuel d'activité du champ d'activité HAD au niveau national en convention avec la FNEHAD
+\end{itemize}
 \end{itemize}}
+
+ \vspace{5mm}
 
 \cventry{2013\hspace{0.625cm}}{IRi}{Information Resources, Inc.}{Chambourcy}{}{
-\begin{itemize}
-\item Études de faisabilité et réalisation d’études statistiques - marketing grande distribution
-\item Coordination d’études délocalisées en Grèce (communication en anglais)
-\item Projet SAS pour développer un nouveau type d’étude en Grèce
-\end{itemize}}
-\cventry{2012\hspace{0.625cm}}{CNPS-CRMM}{Centre de Neurosciences de Paris Sud (Orsay) et Centre de Recherche sur les Mammifères Marins (La Rochelle)}{Stage Recherche de Master 2}{}{
-\begin{itemize}
-\item Estimation du nombre de baleines bleues dans l’océan Indien à partir de données acoustiques
-\item Modélisation du rythme des vocalises de baleines bleues à l’aide d’un modèle de segmentation gaussien 
-\end{itemize}}
+\vspace{0.5mm}
+\begin{itemize}[leftmargin=-0.5in]
+	\item[\ding{32}] {}
+	\begin{itemize}[leftmargin=0.4in]
+		\item Études de faisabilité et réalisation d’études statistiques - marketing grande distribution
+		\item Coordination d’études délocalisées en Grèce (communication en anglais)
+		\item Projet SAS pour développer un nouveau type d’étude en Grèce
+	\end{itemize}
+\end{itemize}
+}
 
-\linespread{1}
+ \vspace{5mm}
+
+\cventry{2012\hspace{0.625cm}}{CNPS-CRMM}{Centre de Neurosciences de Paris Sud (Orsay) et Centre de Recherche sur les Mammifères Marins (La Rochelle)}{Stage Recherche de Master 2}{}{
+\vspace{0.5mm}
+\begin{itemize}[leftmargin=-0.5in]
+	\item[\ding{32}] {}
+	\begin{itemize}[leftmargin=0.4in]
+		\item Estimation du nombre de baleines bleues dans l’océan Indien à partir de données acoustiques
+		\item Modélisation du rythme des vocalises de baleines bleues à l’aide d’un modèle de segmentation gaussien 
+	\end{itemize}
+\end{itemize}
+}
+
+ \vspace{5mm}
+
+\linespread{0.85}
 \section{Programmation et informatique}
 
 \cvitem{Programmes}{R, Python, SQL, SAS, Git}

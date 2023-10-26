@@ -1,0 +1,27 @@
+\documentclass[12pt]{article}
+\usepackage[usestackEOL]{stackengine}
+\usepackage{graphicx}
+\newcommand\rb[1]{\raisebox{-1.5pt}{%
+  \stackunder[-2pt]{%
+    \stackon[0pt]{%
+      \stackinset{c}{}{c}{.35pt}{$\bullet$}{\scalebox{2}{$\circ$}}%
+    }{%
+      \smash{\rule{1pt}{2.1ex}}\kern.5pt}%
+  }{%
+    \smash{\rule[\dimexpr-#1\baselineskip+1.8ex\relax]{1pt}{%
+      \dimexpr#1\baselineskip-1.8ex\relax}}\kern.5pt}%
+  }%
+}
+\let\svitem\item
+\def\rbsetup{\renewcommand\item[1][1]{\svitem[\rb{##1}]}}
+\newenvironment{rbitemize}{\itemize\rbsetup}{\enditemize}
+\begin{document}
+\noindent Here is my itemize:
+\begin{rbitemize}
+\item foo
+\item[2] bar continuing for an extra line to check if I can extend the 
+  vertical bar downward, albeit manually
+\item baz
+\end{rbitemize}
+Done with itemize
+\end{document}
